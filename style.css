@@ -49,7 +49,7 @@ main {
 
 html[data-lang="en"] [data-lang="uk"],
 html[data-lang="uk"] [data-lang="en"] { display: none !important; }
-html:not([data-lang]) .topbar nav [data-lang="uk"],
+html:not([data-lang]) span[data-lang="uk"],
 html:not([data-lang]) .controls { display: none; }
 
 .topbar {
