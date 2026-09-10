@@ -1,0 +1,160 @@
+/* Light tokens are the default; dark applies when the reader's system asks for
+ * it and they have not picked light, or whenever they have picked dark. The
+ * accent is the app's own green — this page used to carry the old iOS blue. */
+:root {
+  color-scheme: light;
+  --bg: #ffffff;
+  --surface: #f2f3f5;
+  --text: #111214;
+  --muted: #5f6166;
+  --line: #e4e5e8;
+  --accent: #00785f;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --bg: #121212;
+    --surface: #1c1c1e;
+    --text: #f5f5f7;
+    --muted: #9a9aa0;
+    --line: #2a2a2d;
+    --accent: #2ecfa8;
+  }
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #121212;
+  --surface: #1c1c1e;
+  --text: #f5f5f7;
+  --muted: #9a9aa0;
+  --line: #2a2a2d;
+  --accent: #2ecfa8;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0 20px;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+
+main {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding-block: 1rem 5rem;
+}
+
+/* One language on screen at a time — once the script has chosen one. Without
+ * JavaScript there is no data-lang, so both stay visible and the switchers,
+ * which could not work, are hidden. */
+html[data-lang="en"] [data-lang="uk"],
+html[data-lang="uk"] [data-lang="en"] { display: none !important; }
+html:not([data-lang]) .topbar nav [data-lang="uk"],
+html:not([data-lang]) .controls { display: none; }
+
+.topbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding-block: 12px;
+  border-bottom: 1px solid var(--line);
+}
+
+.topbar nav { display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: 0.9rem; }
+.topbar nav a:first-child { font-weight: 700; color: var(--text); text-decoration: none; }
+
+.controls { display: flex; align-items: center; gap: 8px; }
+
+.seg {
+  display: inline-flex;
+  padding: 2px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+}
+
+.seg button {
+  min-width: 40px;
+  min-height: 32px;
+  padding: 0 12px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.seg button[aria-pressed="true"] {
+  background: var(--surface);
+  color: var(--text);
+  font-weight: 600;
+}
+
+.theme-toggle {
+  display: inline-grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--text);
+  cursor: pointer;
+}
+
+.theme-toggle svg { width: 18px; height: 18px; }
+
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+header {
+  padding-block: 2rem 1rem;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 2rem;
+}
+
+h1 { font-size: 1.9rem; line-height: 1.15; letter-spacing: -0.02em; margin: 0 0 0.5rem; }
+h2 { font-size: 1.25rem; line-height: 1.25; letter-spacing: -0.01em; margin: 2.5rem 0 0.75rem; }
+h3 { font-size: 1rem; margin: 1.5rem 0 0.5rem; }
+
+p, li { color: var(--text); }
+ul, ol { padding-left: 1.25rem; }
+li { margin-bottom: 0.4rem; }
+
+.lede { color: var(--muted); font-size: 1.05rem; }
+.meta { color: var(--muted); font-size: 0.875rem; margin: 0; }
+
+.callout {
+  background: var(--surface);
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0;
+}
+.callout p:first-child { margin-top: 0; }
+.callout p:last-child { margin-bottom: 0; }
+
+a { color: var(--accent); }
+
+table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: 0.95rem; }
+th, td { text-align: left; padding: 0.5rem 0.75rem 0.5rem 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font-weight: 600; }
+
+footer {
+  margin-top: 4rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.875rem;
+}
