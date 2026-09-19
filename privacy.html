@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-title-en="Privacy Policy · Gym Cards" data-title-uk="Політика конфіденційності · Gym Cards">
+<html lang="en" data-title-en="Privacy Policy · Gym Cards" data-title-uk="Політика конфіденційності · Gym Cards" data-title-pl="Gym Cards: polityka prywatności" data-title-de="Gym Cards: Datenschutzerklärung" data-title-es="Gym Cards: política de privacidad" data-title-pt-BR="Gym Cards: política de privacidade">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,14 +13,18 @@
 <div class="topbar">
   <nav>
     <a href="index.html">Gym Cards</a>
-    <a href="privacy.html"><span data-lang="en">Privacy</span><span data-lang="uk" lang="uk">Конфіденційність</span></a>
-    <a href="support.html"><span data-lang="en">Support</span><span data-lang="uk" lang="uk">Підтримка</span></a>
+    <a href="privacy.html"><span data-lang="en">Privacy</span><span data-lang="uk" lang="uk">Конфіденційність</span><span data-lang="pl" lang="pl">Prywatność</span><span data-lang="de" lang="de">Datenschutz</span><span data-lang="es" lang="es">Privacidad</span><span data-lang="pt-BR" lang="pt-BR">Privacidade</span></a>
+    <a href="support.html"><span data-lang="en">Support</span><span data-lang="uk" lang="uk">Підтримка</span><span data-lang="pl" lang="pl">Pomoc</span><span data-lang="de" lang="de">Hilfe</span><span data-lang="es" lang="es">Ayuda</span><span data-lang="pt-BR" lang="pt-BR">Ajuda</span></a>
   </nav>
   <div class="controls">
-    <div class="seg" role="group" aria-label="Language / Мова">
-      <button type="button" data-set-lang="en" lang="en" aria-pressed="false">EN</button>
-      <button type="button" data-set-lang="uk" lang="uk" aria-pressed="false">УК</button>
-    </div>
+    <select class="lang" data-set-lang aria-label="Language">
+      <option value="de" lang="de">Deutsch</option>
+      <option value="en" lang="en">English</option>
+      <option value="es" lang="es">Español</option>
+      <option value="pl" lang="pl">Polski</option>
+      <option value="pt-BR" lang="pt-BR">Português</option>
+      <option value="uk" lang="uk">Українська</option>
+    </select>
     <button type="button" class="theme-toggle" data-toggle-theme aria-label="Switch theme">
       <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg>
     </button>
@@ -67,7 +71,7 @@
   <tr><td>Notifications</td><td>Only to deliver the local workout reminders you schedule yourself, on the days and at the time you choose. Reminders are generated on your device. There is no push server.</td></tr>
   <tr><td>Vibration</td><td>Haptic feedback on taps and saves. You can turn it off in Settings.</td></tr>
 </table>
-<p>The app does not request camera, microphone, location, contacts, calendar, health-platform or advertising-identifier access.</p>
+<p>The app does not request camera, microphone, location, contacts, calendar or advertising-identifier access. It asks for permission to write to Apple Health only when you turn that on yourself in Settings.</p>
 
 <h2>When data leaves your device</h2>
 <ul>
@@ -99,7 +103,7 @@
 <p>Since we hold no personal data, requests to access, correct, port or erase data held by us have nothing to act on: you already hold and control all of it. If you have a question about that, write to us anyway and we will answer.</p>
 
 <h2>Health data</h2>
-<p>Body weight, body-fat percentage and body measurements are health-related information. They are stored on your device and, only if you turn on backup, in your own iCloud or Google Drive. We never read them. Gym Cards does not connect to Apple Health, Google Fit or Health Connect.</p>
+<p>Body weight, body-fat percentage and body measurements are health-related information. They are stored on your device and, only if you turn on backup, in your own iCloud or Google Drive. We never read them. If you turn on Apple Health in Settings, the app writes your workouts there: the workout type, its start time and its end time. It reads nothing from Apple Health, and nothing from Apple Health ends up in a backup. You can turn it off in Settings or in the Health app at any time. Gym Cards does not connect to Google Fit or Health Connect.</p>
 
 <h2>Changes to this policy</h2>
 <p>If this policy changes, the new version will be published on this page with an updated date above. Material changes will also be noted in the app's release notes.</p>
@@ -149,7 +153,7 @@
   <tr><td>Сповіщення</td><td>Лише щоб доставляти локальні нагадування про тренування, які ви самі запланували на обрані дні й час. Нагадування створюються на пристрої. Push-сервера немає.</td></tr>
   <tr><td>Вібрація</td><td>Тактильний відгук на натиски й збереження. Вимикається в налаштуваннях.</td></tr>
 </table>
-<p>Застосунок не просить доступу до камери, мікрофона, геолокації, контактів, календаря, платформ здоров'я чи рекламного ідентифікатора.</p>
+<p>Застосунок не просить доступу до камери, мікрофона, геолокації, контактів, календаря чи рекламного ідентифікатора. Дозвіл на запис в Apple Health він просить лише тоді, коли ви самі вмикаєте це в налаштуваннях.</p>
 
 <h2>Коли дані залишають пристрій</h2>
 <ul>
@@ -181,7 +185,7 @@
 <p>Оскільки ми не тримаємо персональних даних, запити на доступ, виправлення, перенесення чи стирання даних у нас не мають до чого застосуватися: ви вже володієте всім і керуєте всім. Якщо все ж маєте питання, напишіть нам, і ми відповімо.</p>
 
 <h2>Дані про здоров'я</h2>
-<p>Вага, відсоток жиру й обхвати тіла є інформацією, пов'язаною зі здоров'ям. Вони зберігаються на вашому пристрої і, лише якщо ви ввімкнули бекап, у вашому власному iCloud чи Google Drive. Ми їх ніколи не читаємо. Gym Cards не під'єднується до Apple Health, Google Fit чи Health Connect.</p>
+<p>Вага, відсоток жиру й обхвати тіла є інформацією, пов'язаною зі здоров'ям. Вони зберігаються на вашому пристрої і, лише якщо ви ввімкнули бекап, у вашому власному iCloud чи Google Drive. Ми їх ніколи не читаємо. Якщо ви ввімкнете Apple Health у налаштуваннях, застосунок записує туди ваші тренування: тип, час початку й час завершення. Зі самого Apple Health він нічого не читає, і жодні дані звідти не потрапляють у бекап. Вимкнути можна в налаштуваннях або в програмі «Здоров'я» будь-коли. Gym Cards не під'єднується до Google Fit чи Health Connect.</p>
 
 <h2>Зміни в політиці</h2>
 <p>Якщо політика зміниться, нова редакція з'явиться на цій сторінці з оновленою датою вгорі. Про суттєві зміни ми також напишемо в нотатках до випуску.</p>
@@ -191,8 +195,336 @@
 
 </div>
 
+<div data-lang="pl" lang="pl" id="pl">
+
+<header>
+  <h1>Polityka prywatności</h1>
+  <p class="meta">Obowiązuje od 10 września 2026 · Ostatnia aktualizacja 17 września 2026</p>
+</header>
+
+<p class="lede">Gym Cards to dziennik treningowy, który przechowuje wszystko, co zapisujesz, na twoim telefonie. Nie prowadzimy serwera dla twoich danych i nie ma konta Gym Cards.</p>
+
+<div class="callout">
+  <p><strong>W skrócie.</strong> Niczego nie zbieramy i nie możemy zobaczyć twoich treningów, zdjęć ani pomiarów ciała. Opuszczają one urządzenie tylko wtedy, gdy samodzielnie je eksportujesz lub udostępniasz albo gdy włączysz kopię zapasową na twój własny iCloud lub Google Drive.</p>
+</div>
+
+<h2>Kim jesteśmy</h2>
+<p>Wydawcą Gym Cards jest Maksym Tytechko. W każdej sprawie dotyczącej tej polityki możesz się z nami skontaktować pod adresem <a href="mailto:0xmaksym@gmail.com">0xmaksym@gmail.com</a>.</p>
+
+<h2>Co aplikacja przechowuje na twoim urządzeniu</h2>
+<p>Wszystkie poniższe dane są zapisywane w prywatnej bazie danych i w prywatnym folderze w obrębie własnego obszaru pamięci aplikacji, który może odczytać tylko Gym Cards:</p>
+<table>
+  <tr><th>Kategoria</th><th>Co to jest</th></tr>
+  <tr><td>Treningi</td><td>Daty, godziny, ćwiczenia, serie, ciężary, powtórzenia, oznaczenia rozgrzewki, oznaczenia rekordów życiowych, notatki tekstowe, ulubione</td></tr>
+  <tr><td>Biblioteka ćwiczeń</td><td>Nazwy ćwiczeń, wskazówki i opisy, które wpisujesz</td></tr>
+  <tr><td>Zdjęcia i filmy</td><td>Zdjęcia postępów i ich wyrównanie, filmy z techniką, okładki miesięcy i twoje zdjęcie profilowe, kopiowane do prywatnego folderu aplikacji, gdy je dołączasz</td></tr>
+  <tr><td>Pomiary ciała</td><td>Waga ciała, procent tkanki tłuszczowej i pomiary obwodów, które zdecydujesz się zapisać, wraz z ich datami</td></tr>
+  <tr><td>Cele i osiągnięcia</td><td>Wyznaczone przez ciebie cele, to, kiedy zostały osiągnięte, oraz odblokowane osiągnięcia</td></tr>
+  <tr><td>Profil</td><td>Wyświetlana nazwa, motto i awatar ustawione w aplikacji</td></tr>
+  <tr><td>Ustawienia</td><td>Motyw, ikona aplikacji, język, jednostki, początek tygodnia, rozmiar tekstu, wibracje, harmonogram przypomnień, preferencje kopii zapasowej oraz to, czy Gym Cards Pro jest aktywny</td></tr>
+</table>
+
+<h2>Co zbieramy</h2>
+<p><strong>Nic.</strong> Gym Cards nie zawiera analityki, raportowania awarii, reklam, identyfikatorów śledzących ani zewnętrznych SDK, które raportują użycie. Aplikacja korzysta z sieci tylko w celu zakupów, aktualizacji i opcjonalnej kopii zapasowej opisanych poniżej i żadne z nich nie wysyła nam twojego dziennika.</p>
+<p>Ponieważ nie zbieramy danych osobowych, nie mamy żadnych danych, które moglibyśmy komukolwiek sprzedać, udostępnić lub ujawnić, i nie odbywa się żadne profilowanie ani zautomatyzowane podejmowanie decyzji.</p>
+
+<h2>O jakie uprawnienia prosi aplikacja i dlaczego</h2>
+<table>
+  <tr><th>Uprawnienie</th><th>Dlaczego</th></tr>
+  <tr><td>Biblioteka zdjęć</td><td>Tylko po to, by umożliwić ci wybranie zdjęcia lub filmu do dołączenia do treningu, ćwiczenia, okładki miesiąca lub profilu. Aplikacja odczytuje wybrany element i kopiuje go do własnej prywatnej pamięci. Nigdy nie przegląda ani nie przesyła twojej biblioteki.</td></tr>
+  <tr><td>Powiadomienia</td><td>Tylko do dostarczania lokalnych przypomnień o treningu, które samodzielnie ustawiasz, w wybrane przez ciebie dni i o wybranej godzinie. Przypomnienia są tworzone na twoim urządzeniu. Nie ma serwera powiadomień push.</td></tr>
+  <tr><td>Wibracje</td><td>Haptyczna informacja zwrotna przy stuknięciach i zapisywaniu. Możesz ją wyłączyć w Ustawieniach.</td></tr>
+</table>
+<p>Aplikacja nie prosi o dostęp do aparatu, mikrofonu, lokalizacji, kontaktów, kalendarza ani identyfikatora reklamowego. O zgodę na zapis w Apple Health prosi tylko wtedy, gdy sam włączysz to w ustawieniach.</p>
+
+<h2>Kiedy dane opuszczają twoje urządzenie</h2>
+<ul>
+  <li><strong>Eksport CSV, kopii JSON lub PDF miesiąca.</strong> Plik jest zapisywany w folderze tymczasowym i przekazywany do systemowego arkusza udostępniania. Ty wybierasz miejsce docelowe: e-mail, dysk w chmurze, komunikator albo nigdzie. Nigdy go nie widzimy.</li>
+  <li><strong>Udostępnianie zdjęcia, podsumowania lub karty</strong> przez ten sam systemowy arkusz udostępniania.</li>
+  <li><strong>Automatyczna kopia zapasowa (Gym Cards Pro, wyłączona, dopóki jej nie włączysz).</strong> Na iPhonie aplikacja kopiuje twój dziennik jako plik JSON, a jeśli na to zezwolisz, także twoje zdjęcia i filmy, do prywatnego folderu Gym Cards na twoim własnym koncie iCloud. Na Androidzie kopiuje je do ukrytego folderu aplikacji na twoim własnym Google Drive po zalogowaniu się kontem Google. Google Sign-In jest używany wyłącznie w tym celu i prosi tylko o dostęp do tego ukrytego folderu aplikacji. Apple lub Google przechowują te pliki zgodnie z własnymi politykami prywatności. Nigdy ich nie otrzymujemy.</li>
+  <li><strong>Zakupy.</strong> Gym Cards Pro to jednorazowy zakup przez App Store lub Google Play. Obsługują one płatność i informują aplikację, czy posiadasz Pro. Nigdy nie widzimy twoich danych płatniczych.</li>
+  <li><strong>Aktualizacje aplikacji.</strong> Przy uruchomieniu aplikacja może zapytać usługę aktualizacji Expo, czy dostępny jest nowszy kod aplikacji, i go pobrać. Zapytanie zawiera wersję aplikacji i platformę, a nie twoje dane.</li>
+</ul>
+<p>Gdy przekażesz plik innej aplikacji lub usłudze, to, co się z nim dzieje, podlega polityce prywatności tej aplikacji lub usługi.</p>
+
+<h2>Widżety na ekranie głównym</h2>
+<p>Aby narysować widżety, aplikacja zapisuje krótkie podsumowanie (liczbę treningów, dni treningowe i kolory) w pamięci, którą na twoim urządzeniu mogą odczytać tylko aplikacja i jej własne widżety. Nigdy nie opuszcza ono urządzenia.</p>
+
+<h2>Kopie zapasowe urządzenia</h2>
+<p>Gym Cards rezygnuje z automatycznej kopii zapasowej urządzenia na Androidzie, więc twoja baza treningów i multimedia nie są tam kopiowane. Na iOS to, czy dane aplikacji trafiają do kopii zapasowej iCloud lub zaszyfrowanej lokalnej kopii zapasowej urządzenia, zależy od twoich własnych ustawień urządzenia, którymi zarządza Apple, a nie my. Aby celowo przenieść dane, użyj opisanej wyżej automatycznej kopii zapasowej albo eksportu i importu JSON w Ustawieniach.</p>
+
+<h2>Dzieci</h2>
+<p>Aplikacja Gym Cards nie jest skierowana do dzieci i świadomie nie zbieramy żadnych informacji od nikogo, w żadnym wieku, ponieważ w ogóle nie zbieramy informacji.</p>
+
+<h2>Twoja kontrola nad danymi</h2>
+<ul>
+  <li><strong>Wgląd:</strong> wszystko jest widoczne w aplikacji.</li>
+  <li><strong>Eksport:</strong> Ustawienia, Dane, Eksport CSV lub JSON.</li>
+  <li><strong>Usunięcie treningu:</strong> trening trafia do Kosza, skąd możesz go przywrócić albo usunąć na stałe.</li>
+  <li><strong>Usunięcie kopii zapasowej w chmurze:</strong> na iPhonie Ustawienia, twoje imię i nazwisko, iCloud, Zarządzaj pamięcią masową konta, Gym Cards, Usuń dane. Na Androidzie Google Drive w przeglądarce, Ustawienia, Zarządzaj aplikacjami, Gym Cards, Usuń ukryte dane aplikacji.</li>
+  <li><strong>Usunięcie wszystkiego:</strong> odinstalowanie aplikacji usuwa z urządzenia bazę danych, folder z multimediami i wszystkie ustawienia.</li>
+</ul>
+<p>Ponieważ nie przechowujemy żadnych danych osobowych, żądania dostępu do danych przechowywanych przez nas, ich sprostowania, przeniesienia lub usunięcia nie mają czego dotyczyć: wszystkie te dane już masz i kontrolujesz. Jeśli masz pytanie w tej sprawie, i tak do nas napisz, a odpowiemy.</p>
+
+<h2>Dane dotyczące zdrowia</h2>
+<p>Waga ciała, procent tkanki tłuszczowej i pomiary ciała to informacje związane ze zdrowiem. Są przechowywane na twoim urządzeniu oraz, tylko jeśli włączysz kopię zapasową, na twoim własnym iCloud lub Google Drive. Nigdy ich nie odczytujemy. Jeśli włączysz Apple Health w ustawieniach, aplikacja zapisuje tam twoje treningi: typ, godzinę rozpoczęcia i zakończenia. Z samego Apple Health niczego nie odczytuje i nic stamtąd nie trafia do kopii zapasowej. Możesz to wyłączyć w ustawieniach albo w aplikacji Zdrowie w dowolnej chwili. Gym Cards nie łączy się z Google Fit ani Health Connect.</p>
+
+<h2>Zmiany tej polityki</h2>
+<p>Jeśli ta polityka się zmieni, nowa wersja zostanie opublikowana na tej stronie z zaktualizowaną datą powyżej. Istotne zmiany zostaną też odnotowane w informacjach o wersji aplikacji.</p>
+
+<h2>Kontakt</h2>
+<p><a href="mailto:0xmaksym@gmail.com">0xmaksym@gmail.com</a></p>
+
+</div>
+
+<div data-lang="de" lang="de" id="de">
+
+<header>
+  <h1>Datenschutzerklärung</h1>
+  <p class="meta">Gültig ab 10. September 2026 · Zuletzt aktualisiert am 17. September 2026</p>
+</header>
+
+<p class="lede">Gym Cards ist ein Trainingstagebuch, das alles, was du erfasst, auf deinem Handy speichert. Wir betreiben keinen Server für deine Daten, und es gibt kein Konto bei Gym Cards.</p>
+
+<div class="callout">
+  <p><strong>Die Kurzfassung.</strong> Wir erheben nichts, und wir können deine Trainings, Fotos oder Körpermaße nicht sehen. Sie verlassen dein Gerät nur, wenn du sie selbst exportierst oder teilst oder wenn du das Backup in deine eigene iCloud oder dein eigenes Google Drive einschaltest.</p>
+</div>
+
+<h2>Wer wir sind</h2>
+<p>Gym Cards wird von Maksym Tytechko veröffentlicht. Zu allen Fragen zu dieser Erklärung erreichst du uns unter <a href="mailto:0xmaksym@gmail.com">0xmaksym@gmail.com</a>.</p>
+
+<h2>Was die App auf deinem Gerät speichert</h2>
+<p>Alles Folgende wird in eine private Datenbank und einen privaten Ordner im eigenen Speicherbereich der App geschrieben, die nur Gym Cards lesen kann:</p>
+<table>
+  <tr><th>Kategorie</th><th>Was es ist</th></tr>
+  <tr><td>Trainings</td><td>Datumsangaben, Uhrzeiten, Übungen, Sätze, Gewichte, Wiederholungen, Markierungen für Aufwärmsätze, Markierungen für persönliche Rekorde, Notizen in freiem Text, Favoriten</td></tr>
+  <tr><td>Übungsbibliothek</td><td>Namen, Hinweise und Beschreibungen von Übungen, die du eintippst</td></tr>
+  <tr><td>Fotos und Videos</td><td>Fortschrittsfotos und ihre Ausrichtung, Technikvideos, Titelbilder der Monate und dein Profilbild, die beim Anhängen in den privaten Ordner der App kopiert werden</td></tr>
+  <tr><td>Körpermaße</td><td>Körpergewicht, Körperfettanteil und Umfangsmaße, die du erfassen möchtest, mit ihren Datumsangaben</td></tr>
+  <tr><td>Ziele und Erfolge</td><td>Die Ziele, die du setzt, wann sie erreicht wurden, und die Erfolge, die du freigeschaltet hast</td></tr>
+  <tr><td>Profil</td><td>Der Anzeigename, das Motto und der Avatar, die du in der App festlegst</td></tr>
+  <tr><td>Einstellungen</td><td>Farbthema, App-Icon, Sprache, Einheiten, Wochenbeginn, Textgröße, Vibration, Zeitplan der Erinnerungen, Backup-Einstellungen und ob Gym Cards Pro aktiv ist</td></tr>
+</table>
+
+<h2>Was wir erheben</h2>
+<p><strong>Nichts.</strong> Gym Cards enthält keine Analysetools, keine Absturzberichte, keine Werbung, keine Tracking-Kennungen und keine SDKs von Drittanbietern, die die Nutzung melden. Die App nutzt das Netzwerk nur für die unten beschriebenen Käufe, Updates und das optionale Backup, und keines davon schickt dein Tagebuch an uns.</p>
+<p>Da wir keine personenbezogenen Daten erheben, gibt es keine Daten, die wir verkaufen, weitergeben oder gegenüber irgendjemandem offenlegen könnten, und es findet weder Profiling noch automatisierte Entscheidungsfindung statt.</p>
+
+<h2>Welche Berechtigungen die App anfragt und warum</h2>
+<table>
+  <tr><th>Berechtigung</th><th>Warum</th></tr>
+  <tr><td>Fotogalerie</td><td>Nur damit du ein Foto oder Video auswählen kannst, um es an ein Training, eine Übung, ein Titelbild eines Monats oder dein Profil anzuhängen. Die App liest das ausgewählte Element und kopiert es in ihren eigenen privaten Speicher. Sie durchsucht deine Galerie nie und lädt sie nie hoch.</td></tr>
+  <tr><td>Benachrichtigungen</td><td>Nur um die lokalen Trainingserinnerungen zuzustellen, die du selbst planst, an den Tagen und zu der Uhrzeit, die du wählst. Erinnerungen werden auf deinem Gerät erzeugt. Es gibt keinen Push-Server.</td></tr>
+  <tr><td>Vibration</td><td>Haptisches Feedback beim Tippen und Speichern. Du kannst es in den Einstellungen ausschalten.</td></tr>
+</table>
+<p>Die App fordert keinen Zugriff auf Kamera, Mikrofon, Standort, Kontakte, Kalender oder die Werbe-ID an. Um die Erlaubnis, in Apple Health zu schreiben, bittet sie nur, wenn du das in den Einstellungen selbst einschaltest.</p>
+
+<h2>Wann Daten dein Gerät verlassen</h2>
+<ul>
+  <li><strong>CSV-Export, JSON-Backup oder Monats-PDF.</strong> Die Datei wird in einen temporären Ordner geschrieben und an das Teilen-Menü deines Betriebssystems übergeben. Du wählst das Ziel: E-Mail, Cloud-Speicher, Messenger oder nirgendwohin. Wir sehen sie nie.</li>
+  <li><strong>Teilen eines Fotos, eines Rückblicks oder einer Karte</strong> über dasselbe Teilen-Menü des Systems.</li>
+  <li><strong>Automatisches Backup (Gym Cards Pro, ausgeschaltet, bis du es einschaltest).</strong> Auf dem iPhone kopiert die App dein Tagebuch als JSON-Datei und, wenn du es erlaubst, deine Fotos und Videos in den privaten Ordner von Gym Cards in deinem eigenen iCloud-Konto. Unter Android kopiert sie sie in den versteckten App-Ordner deines eigenen Google Drive, nachdem du dich mit Google angemeldet hast. Google Sign-In wird nur dafür verwendet und fragt nur nach Zugriff auf diesen versteckten App-Ordner. Apple bzw. Google speichern diese Dateien gemäß ihren eigenen Datenschutzerklärungen. Wir erhalten sie nie.</li>
+  <li><strong>Käufe.</strong> Gym Cards Pro ist ein Einmalkauf über den App Store oder Google Play. Sie wickeln die Zahlung ab und teilen der App mit, ob Pro gekauft wurde. Wir sehen deine Zahlungsdaten nie.</li>
+  <li><strong>App-Updates.</strong> Beim Start kann die App beim Update-Dienst von Expo nachfragen, ob neuerer App-Code verfügbar ist, und ihn herunterladen. Die Anfrage enthält die App-Version und die Plattform, nicht deine Daten.</li>
+</ul>
+<p>Sobald du eine Datei an eine andere App oder einen anderen Dienst übergibst, regelt die Datenschutzerklärung dieser App bzw. dieses Dienstes, was mit ihr geschieht.</p>
+
+<h2>Widgets auf dem Home-Bildschirm</h2>
+<p>Um die Widgets zu zeichnen, schreibt die App eine kleine Zusammenfassung (Anzahl der Trainings, Trainingstage und Farben) in einen Speicher, den nur die App und ihre eigenen Widgets auf deinem Gerät lesen können. Sie verlässt das Gerät nie.</p>
+
+<h2>Gerätebackups</h2>
+<p>Gym Cards ist vom automatischen Gerätebackup von Android ausgenommen, daher werden deine Trainingsdatenbank und deine Medien dort nicht kopiert. Unter iOS legen deine eigenen Geräteeinstellungen, die von Apple und nicht von uns verwaltet werden, fest, ob App-Daten in ein iCloud-Backup oder ein verschlüsseltes lokales Gerätebackup aufgenommen werden. Um deine Daten gezielt zu übertragen, nutze das oben beschriebene automatische Backup oder den JSON-Export und -Import in den Einstellungen.</p>
+
+<h2>Kinder</h2>
+<p>Gym Cards richtet sich nicht an Kinder, und wir erheben wissentlich keine Informationen von irgendjemandem, gleich welchen Alters, weil wir überhaupt keine Informationen erheben.</p>
+
+<h2>Deine Kontrolle über deine Daten</h2>
+<ul>
+  <li><strong>Ansehen:</strong> Alles ist in der App sichtbar.</li>
+  <li><strong>Exportieren:</strong> Einstellungen, Daten, CSV oder JSON exportieren.</li>
+  <li><strong>Ein Training löschen:</strong> Es landet im Papierkorb, und du kannst es wiederherstellen oder endgültig löschen.</li>
+  <li><strong>Ein Cloud-Backup löschen:</strong> Auf dem iPhone: Einstellungen, dein Name, iCloud, Accountspeicher verwalten, Gym Cards, Daten löschen. Unter Android: Google Drive im Web, Einstellungen, Apps verwalten, Gym Cards, Ausgeblendete App-Daten löschen.</li>
+  <li><strong>Alles löschen:</strong> Wenn du die App deinstallierst, werden die Datenbank, der Medienordner und alle Einstellungen von deinem Gerät entfernt.</li>
+</ul>
+<p>Da wir keine personenbezogenen Daten speichern, gibt es bei Anfragen auf Auskunft, Berichtigung, Übertragung oder Löschung von Daten, die bei uns gespeichert sind, nichts, worauf wir reagieren könnten: Du hast bereits alle diese Daten und kontrollierst sie selbst. Wenn du dazu eine Frage hast, schreib uns trotzdem, und wir antworten dir.</p>
+
+<h2>Gesundheitsdaten</h2>
+<p>Körpergewicht, Körperfettanteil und Körpermaße sind gesundheitsbezogene Informationen. Sie werden auf deinem Gerät gespeichert und, nur wenn du das Backup einschaltest, in deiner eigenen iCloud oder deinem eigenen Google Drive. Wir lesen sie nie. Wenn du Apple Health in den Einstellungen einschaltest, schreibt die App deine Trainings dorthin: Art, Startzeit und Endzeit. Aus Apple Health liest sie nichts, und nichts von dort landet im Backup. Du kannst es in den Einstellungen oder in der Health-App jederzeit ausschalten. Gym Cards verbindet sich nicht mit Google Fit oder Health Connect.</p>
+
+<h2>Änderungen dieser Erklärung</h2>
+<p>Wenn sich diese Erklärung ändert, wird die neue Version auf dieser Seite mit einem aktualisierten Datum oben veröffentlicht. Wesentliche Änderungen werden außerdem in den Versionshinweisen der App vermerkt.</p>
+
+<h2>Kontakt</h2>
+<p><a href="mailto:0xmaksym@gmail.com">0xmaksym@gmail.com</a></p>
+
+</div>
+
+<div data-lang="es" lang="es" id="es">
+
+<header>
+  <h1>Política de privacidad</h1>
+  <p class="meta">En vigor desde el 10 de septiembre de 2026 · Última actualización: 17 de septiembre de 2026</p>
+</header>
+
+<p class="lede">Gym Cards es un diario de entrenamiento que guarda en tu teléfono todo lo que registras. No operamos ningún servidor para tus datos y no existe ninguna cuenta de Gym Cards.</p>
+
+<div class="callout">
+  <p><strong>La versión corta.</strong> No recopilamos nada y no podemos ver tus entrenamientos, fotos ni medidas corporales. Solo salen de tu dispositivo cuando los exportas o los compartes tú, o cuando activas la copia de seguridad en tu propio iCloud o Google Drive.</p>
+</div>
+
+<h2>Quiénes somos</h2>
+<p>Gym Cards es una app publicada por Maksym Tytechko. Puedes escribirnos a <a href="mailto:0xmaksym@gmail.com">0xmaksym@gmail.com</a> sobre cualquier punto de esta política.</p>
+
+<h2>Qué guarda la app en tu dispositivo</h2>
+<p>Todo lo siguiente se escribe en una base de datos privada y en una carpeta privada dentro del área de almacenamiento propia de la app, que solo Gym Cards puede leer:</p>
+<table>
+  <tr><th>Categoría</th><th>Qué es</th></tr>
+  <tr><td>Entrenamientos</td><td>Fechas, horas, ejercicios, series, pesos, repeticiones, marcas de calentamiento, marcas de récord personal, notas de texto libre, destacados</td></tr>
+  <tr><td>Biblioteca de ejercicios</td><td>Nombres, consejos y descripciones de ejercicios que escribes</td></tr>
+  <tr><td>Fotos y videos</td><td>Fotos de progreso y su alineación, videos de técnica, imágenes de portada de los meses y tu foto de perfil, copiados en la carpeta privada de la app cuando los adjuntas</td></tr>
+  <tr><td>Medidas corporales</td><td>Peso corporal, porcentaje de grasa corporal y medidas de contorno que decides registrar, con sus fechas</td></tr>
+  <tr><td>Metas y logros</td><td>Las metas que te fijas, cuándo se cumplieron y los logros que desbloqueaste</td></tr>
+  <tr><td>Perfil</td><td>El nombre visible, el lema y el avatar que configuras dentro de la app</td></tr>
+  <tr><td>Ajustes</td><td>Tema, icono de la app, idioma, unidades, inicio de la semana, tamaño del texto, vibración, horario de recordatorios, preferencias de copia de seguridad y si Gym Cards Pro está activo</td></tr>
+</table>
+
+<h2>Qué recopilamos</h2>
+<p><strong>Nada.</strong> Gym Cards no contiene analítica, informes de fallos, publicidad, identificadores de seguimiento ni SDK de terceros que informen sobre el uso. La app usa la red solo para las compras, las actualizaciones y la copia de seguridad opcional que se describen más abajo, y ninguna de ellas nos envía tu diario.</p>
+<p>Como no recopilamos datos personales, no tenemos datos que vender, compartir ni revelar a nadie, y no se realiza ninguna elaboración de perfiles ni toma de decisiones automatizada.</p>
+
+<h2>Permisos que pide la app y por qué</h2>
+<table>
+  <tr><th>Permiso</th><th>Por qué</th></tr>
+  <tr><td>Galería de fotos</td><td>Solo para que puedas elegir una foto o un video y adjuntarlo a un entrenamiento, un ejercicio, una portada de mes o tu perfil. La app lee el elemento que eliges y lo copia en su propio almacenamiento privado. Nunca explora ni sube tu galería.</td></tr>
+  <tr><td>Notificaciones</td><td>Solo para enviarte los recordatorios locales de entrenamiento que programas tú, en los días y a la hora que eliges. Los recordatorios se generan en tu dispositivo. No hay servidor de notificaciones push.</td></tr>
+  <tr><td>Vibración</td><td>Respuesta háptica al tocar y al guardar. Puedes desactivarla en Ajustes.</td></tr>
+</table>
+<p>La app no solicita acceso a la cámara, el micrófono, la ubicación, los contactos, el calendario ni el identificador de publicidad. Pide permiso para escribir en Apple Health solo cuando tú lo activas en los ajustes.</p>
+
+<h2>Cuándo salen los datos de tu dispositivo</h2>
+<ul>
+  <li><strong>Exportar CSV, copia JSON o PDF del mes.</strong> El archivo se escribe en una carpeta temporal y se entrega al menú para compartir de tu sistema operativo. Tú eliges el destino: correo, una nube, una app de mensajería o ninguno. Nosotros nunca lo vemos.</li>
+  <li><strong>Compartir una foto, un resumen o una tarjeta</strong> a través del mismo menú para compartir del sistema.</li>
+  <li><strong>Copia de seguridad automática (Gym Cards Pro, desactivada hasta que la activas).</strong> En iPhone, la app copia tu diario como archivo JSON, y tus fotos y videos si lo permites, en la carpeta privada de Gym Cards de tu propia cuenta de iCloud. En Android, los copia en la carpeta oculta de la app de tu propio Google Drive después de que inicies sesión con Google. Google Sign-In se usa solo para esto y solo pide acceso a esa carpeta oculta de la app. Apple o Google guardan estos archivos según sus propias políticas de privacidad. Nosotros nunca los recibimos.</li>
+  <li><strong>Compras.</strong> Gym Cards Pro es una compra única a través del App Store o Google Play. Ellos procesan el pago e informan a la app de si tienes Pro. Nunca vemos tus datos de pago.</li>
+  <li><strong>Actualizaciones de la app.</strong> Cuando la app se inicia, puede preguntar al servicio de actualizaciones de Expo si hay código más reciente de la app disponible y descargarlo. La solicitud incluye la versión de la app y la plataforma, no tus datos.</li>
+</ul>
+<p>Una vez que entregas un archivo a otra app o servicio, lo que pase con él se rige por la política de privacidad de esa app o servicio.</p>
+
+<h2>Widgets de la pantalla de inicio</h2>
+<p>Para dibujar los widgets, la app escribe un pequeño resumen (número de entrenamientos, días de entrenamiento y colores) en un almacenamiento que solo la app y sus propios widgets pueden leer en tu dispositivo. Nunca sale del dispositivo.</p>
+
+<h2>Copias de seguridad del dispositivo</h2>
+<p>Gym Cards se excluye de la copia de seguridad automática del dispositivo de Android, así que tu base de datos de entrenamientos y tus fotos y videos no se copian ahí. En iOS, que los datos de la app se incluyan o no en una copia de seguridad de iCloud o en una copia local cifrada del dispositivo depende de los ajustes de tu propio dispositivo, que gestiona Apple, no nosotros. Para mover tus datos de forma deliberada, usa la copia de seguridad automática descrita arriba o la exportación e importación JSON en Ajustes.</p>
+
+<h2>Niños</h2>
+<p>Gym Cards no está dirigida a niños y no recopilamos a sabiendas información de nadie, de ninguna edad, porque no recopilamos información en absoluto.</p>
+
+<h2>Tu control sobre tus datos</h2>
+<ul>
+  <li><strong>Verlos:</strong> todo está visible en la app.</li>
+  <li><strong>Exportarlos:</strong> Ajustes, Datos, Exportar CSV o Exportar copia JSON.</li>
+  <li><strong>Eliminar un entrenamiento:</strong> va a la Papelera, desde donde puedes restaurarlo o eliminarlo para siempre.</li>
+  <li><strong>Eliminar una copia de seguridad en la nube:</strong> en iPhone, Ajustes, tu nombre, iCloud, Gestionar almacenamiento de la cuenta, Gym Cards, Eliminar datos. En Android, Google Drive en la web, Configuración, Administrar aplicaciones, Gym Cards, Eliminar datos ocultos de la aplicación.</li>
+  <li><strong>Eliminarlo todo:</strong> al desinstalar la app se eliminan de tu dispositivo la base de datos, la carpeta de fotos y videos y todos los ajustes.</li>
+</ul>
+<p>Como no conservamos datos personales, las solicitudes de acceso, rectificación, portabilidad o supresión de datos en nuestro poder no tienen sobre qué actuar: tú ya tienes y controlas todos tus datos. Si tienes alguna pregunta al respecto, escríbenos de todos modos y te responderemos.</p>
+
+<h2>Datos de salud</h2>
+<p>El peso corporal, el porcentaje de grasa corporal y las medidas corporales son información relacionada con la salud. Se guardan en tu dispositivo y, solo si activas la copia de seguridad, en tu propio iCloud o Google Drive. Nunca los leemos. Si activas Apple Health en los ajustes, la app escribe allí tus entrenamientos: el tipo, la hora de inicio y la hora de fin. No lee nada de Apple Health y nada de allí llega a una copia de seguridad. Puedes desactivarlo en los ajustes o en la app Salud cuando quieras. Gym Cards no se conecta a Google Fit ni a Health Connect.</p>
+
+<h2>Cambios en esta política</h2>
+<p>Si esta política cambia, la nueva versión se publicará en esta página con la fecha actualizada arriba. Los cambios importantes también se indicarán en las notas de la versión de la app.</p>
+
+<h2>Contacto</h2>
+<p><a href="mailto:0xmaksym@gmail.com">0xmaksym@gmail.com</a></p>
+
+</div>
+
+<div data-lang="pt-BR" lang="pt-BR" id="pt-BR">
+
+<header>
+  <h1>Política de Privacidade</h1>
+  <p class="meta">Em vigor desde 10 de setembro de 2026 · Última atualização em 17 de setembro de 2026</p>
+</header>
+
+<p class="lede">O Gym Cards é um diário de treino que guarda no seu celular tudo o que você registra. Não mantemos um servidor para os seus dados e não existe conta do Gym Cards.</p>
+
+<div class="callout">
+  <p><strong>A versão curta.</strong> Não coletamos nada e não conseguimos ver seus treinos, fotos ou medidas corporais. Eles só saem do seu aparelho quando você os exporta ou compartilha por conta própria, ou quando ativa o backup no seu próprio iCloud ou Google Drive.</p>
+</div>
+
+<h2>Quem somos</h2>
+<p>O Gym Cards é publicado por Maksym Tytechko. Você pode falar conosco pelo <a href="mailto:0xmaksym@gmail.com">0xmaksym@gmail.com</a> sobre qualquer assunto desta política.</p>
+
+<h2>O que o app armazena no seu aparelho</h2>
+<p>Tudo o que está listado abaixo é gravado em um banco de dados privado e em uma pasta privada dentro da área de armazenamento do próprio app, que só o Gym Cards pode ler:</p>
+<table>
+  <tr><th>Categoria</th><th>O que é</th></tr>
+  <tr><td>Treinos</td><td>Datas, horários, exercícios, séries, pesos, repetições, marcações de aquecimento, marcações de recorde pessoal, notas em texto livre, favoritos</td></tr>
+  <tr><td>Biblioteca de exercícios</td><td>Nomes, dicas e descrições de exercícios que você digita</td></tr>
+  <tr><td>Fotos e vídeos</td><td>Fotos de progresso e o alinhamento delas, vídeos de técnica, imagens de capa dos meses e a sua foto de perfil, copiados para a pasta privada do app quando você os anexa</td></tr>
+  <tr><td>Medidas corporais</td><td>Peso corporal, percentual de gordura corporal e medidas de circunferência que você escolhe registrar, com as respectivas datas</td></tr>
+  <tr><td>Metas e conquistas</td><td>As metas que você define, quando foram alcançadas e as conquistas que você desbloqueou</td></tr>
+  <tr><td>Perfil</td><td>O nome de exibição, o lema e o avatar que você define dentro do app</td></tr>
+  <tr><td>Ajustes</td><td>Tema, ícone do app, idioma, unidades, início da semana, tamanho do texto, vibração, horários dos lembretes, preferências de backup e se o Gym Cards Pro está ativo</td></tr>
+</table>
+
+<h2>O que coletamos</h2>
+<p><strong>Nada.</strong> O Gym Cards não contém ferramentas de análise, relatórios de falhas, publicidade, identificadores de rastreamento nem SDKs de terceiros que relatem o uso. O app usa a rede apenas para as compras, as atualizações e o backup opcional descritos abaixo, e nenhum deles envia o seu diário para nós.</p>
+<p>Como não coletamos dados pessoais, não há dados para vendermos, compartilharmos ou divulgarmos a ninguém, e não ocorre nenhuma criação de perfil nem tomada de decisão automatizada.</p>
+
+<h2>Permissões que o app pede, e por quê</h2>
+<table>
+  <tr><th>Permissão</th><th>Por quê</th></tr>
+  <tr><td>Galeria de fotos</td><td>Apenas para que você possa escolher uma foto ou um vídeo para anexar a um treino, a um exercício, a uma capa de mês ou ao seu perfil. O app lê o item que você escolhe e o copia para o próprio armazenamento privado. Ele nunca navega pela sua galeria nem faz upload dela.</td></tr>
+  <tr><td>Notificações</td><td>Apenas para entregar os lembretes de treino locais que você mesmo agenda, nos dias e no horário que você escolher. Os lembretes são gerados no seu aparelho. Não existe servidor de push.</td></tr>
+  <tr><td>Vibração</td><td>Resposta tátil ao tocar e ao salvar. Você pode desativá-la nos Ajustes.</td></tr>
+</table>
+<p>O app não pede acesso à câmera, ao microfone, à localização, aos contatos, ao calendário nem ao identificador de publicidade. Ele pede permissão para gravar no Apple Health só quando você ativa isso nos ajustes.</p>
+
+<h2>Quando os dados saem do seu aparelho</h2>
+<ul>
+  <li><strong>Exportar CSV, backup JSON ou PDF do mês.</strong> O arquivo é gravado em uma pasta temporária e entregue ao menu de compartilhamento do seu sistema operacional. Você escolhe o destino: e-mail, drive na nuvem, app de mensagens ou lugar nenhum. Nós nunca o vemos.</li>
+  <li><strong>Compartilhar uma foto, uma retrospectiva ou um card</strong> pelo mesmo menu de compartilhamento do sistema.</li>
+  <li><strong>Backup automático (Gym Cards Pro, desativado até você ativá-lo).</strong> No iPhone, o app copia o seu diário como um arquivo JSON e, se você permitir, as suas fotos e vídeos para a pasta privada do Gym Cards na sua própria conta do iCloud. No Android, ele os copia para a pasta oculta do app no seu próprio Google Drive depois que você entra com a sua conta Google. O Google Sign-In é usado só para isso e pede acesso apenas a essa pasta oculta do app. A Apple ou o Google armazenam esses arquivos de acordo com as próprias políticas de privacidade. Nós nunca os recebemos.</li>
+  <li><strong>Compras.</strong> O Gym Cards Pro é uma compra única feita pela App Store ou pelo Google Play. Eles processam o pagamento e informam ao app se você tem o Pro. Nós nunca vemos os seus dados de pagamento.</li>
+  <li><strong>Atualizações do app.</strong> Quando o app é aberto, ele pode perguntar ao serviço de atualizações do Expo se há um código mais novo do app disponível e baixá-lo. A solicitação leva a versão do app e a plataforma, não os seus dados.</li>
+</ul>
+<p>Depois que você entrega um arquivo a outro app ou serviço, é a política de privacidade desse app ou serviço que rege o que acontece com ele.</p>
+
+<h2>Widgets da tela inicial</h2>
+<p>Para desenhar os widgets, o app grava um pequeno resumo (contagem de treinos, dias de treino e cores) em um armazenamento que só o app e os próprios widgets dele no seu aparelho podem ler. Esse resumo nunca sai do aparelho.</p>
+
+<h2>Backups do aparelho</h2>
+<p>O Gym Cards fica de fora do backup automático de aparelho do Android, então o seu banco de dados de treinos e as mídias não são copiados para lá. No iOS, a inclusão dos dados do app em um backup do iCloud ou em um backup local criptografado do aparelho é controlada pelos ajustes do seu próprio aparelho, que são gerenciados pela Apple, não por nós. Para transferir os seus dados de forma intencional, use o backup automático descrito acima ou a exportação e a importação de JSON nos Ajustes.</p>
+
+<h2>Crianças</h2>
+<p>O Gym Cards não é direcionado a crianças, e não coletamos intencionalmente nenhuma informação de ninguém, de nenhuma idade, porque não coletamos informação alguma.</p>
+
+<h2>Seu controle sobre os seus dados</h2>
+<ul>
+  <li><strong>Ver:</strong> tudo fica visível no app.</li>
+  <li><strong>Exportar:</strong> Ajustes, Dados, Exportar CSV ou JSON.</li>
+  <li><strong>Excluir um treino:</strong> ele vai para a Lixeira, e você pode restaurá-lo ou excluí-lo para sempre.</li>
+  <li><strong>Excluir um backup na nuvem:</strong> no iPhone, Ajustes, seu nome, iCloud, Gerenciar Armazenamento da Conta, Gym Cards, Apagar Dados. No Android, Google Drive na web, Configurações, Gerenciar apps, Gym Cards, Excluir dados ocultos do app.</li>
+  <li><strong>Excluir tudo:</strong> desinstalar o app remove do seu aparelho o banco de dados, a pasta de mídias e todos os ajustes.</li>
+</ul>
+<p>Como não mantemos nenhum dado pessoal, pedidos de acesso, correção, portabilidade ou eliminação de dados mantidos por nós não têm sobre o que agir: você já tem e controla todos eles. Se tiver alguma dúvida sobre isso, escreva para nós mesmo assim e nós responderemos.</p>
+
+<h2>Dados de saúde</h2>
+<p>Peso corporal, percentual de gordura corporal e medidas corporais são informações relacionadas à saúde. Eles ficam armazenados no seu aparelho e, só se você ativar o backup, no seu próprio iCloud ou Google Drive. Nós nunca os lemos. Se você ativar o Apple Health nos ajustes, o app grava ali os seus treinos: o tipo, a hora de início e a hora de fim. Ele não lê nada do Apple Health, e nada de lá entra em um backup. Você pode desligar isso nos ajustes ou no app Saúde quando quiser. O Gym Cards não se conecta ao Google Fit nem ao Health Connect.</p>
+
+<h2>Alterações nesta política</h2>
+<p>Se esta política mudar, a nova versão será publicada nesta página com a data atualizada acima. Mudanças relevantes também serão mencionadas nas notas de versão do app.</p>
+
+<h2>Contato</h2>
+<p><a href="mailto:0xmaksym@gmail.com">0xmaksym@gmail.com</a></p>
+
+</div>
+
 <footer>
-  <p>Gym Cards · <span data-lang="en">Maksym Tytechko</span><span data-lang="uk" lang="uk">Титечко Максим</span> · <a href="mailto:0xmaksym@gmail.com">0xmaksym@gmail.com</a></p>
+  <p>Gym Cards · <span data-lang="en">Maksym Tytechko</span><span data-lang="uk" lang="uk">Титечко Максим</span><span data-lang="pl" lang="pl">Maksym Tytechko</span><span data-lang="de" lang="de">Maksym Tytechko</span><span data-lang="es" lang="es">Maksym Tytechko</span><span data-lang="pt-BR" lang="pt-BR">Maksym Tytechko</span> · <a href="mailto:0xmaksym@gmail.com">0xmaksym@gmail.com</a></p>
 </footer>
 
 </main>

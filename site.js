@@ -1,9 +1,13 @@
 (function () {
   const root = document.documentElement;
-  const LANGS = ['en', 'uk'];
+  const LANGS = ['en', 'uk', 'pl', 'de', 'es', 'pt-BR'];
   const THEME_LABELS = {
     en: { dark: 'Switch to dark theme', light: 'Switch to light theme' },
     uk: { dark: 'Увімкнути темну тему', light: 'Увімкнути світлу тему' },
+    pl: { dark: 'Włącz ciemny motyw', light: 'Włącz jasny motyw' },
+    de: { dark: 'Dunkles Design einschalten', light: 'Helles Design einschalten' },
+    es: { dark: 'Activar el tema oscuro', light: 'Activar el tema claro' },
+    'pt-BR': { dark: 'Ativar o tema escuro', light: 'Ativar o tema claro' },
   };
 
   function load(key) {
@@ -23,13 +27,23 @@
     }
   }
 
+  function match(tag) {
+    const code = String(tag || '').toLowerCase().split('-')[0];
+    return LANGS.find((lang) => lang.toLowerCase().split('-')[0] === code);
+  }
+
   function pickLang() {
-    const query = new URLSearchParams(location.search).get('lang');
-    if (LANGS.includes(query)) return query;
-    if (location.hash === '#uk') return 'uk';
+    const query = match(new URLSearchParams(location.search).get('lang'));
+    if (query) return query;
+    const hash = location.hash.slice(1);
+    if (LANGS.includes(hash)) return hash;
     const saved = load('lang');
     if (LANGS.includes(saved)) return saved;
-    return /^uk\b/i.test(navigator.language || '') ? 'uk' : 'en';
+    for (const tag of navigator.languages || [navigator.language]) {
+      const lang = match(tag);
+      if (lang) return lang;
+    }
+    return 'en';
   }
 
   function applyLang(lang) {
@@ -37,9 +51,7 @@
     root.lang = lang;
     const title = root.getAttribute('data-title-' + lang);
     if (title) document.title = title;
-    for (const button of document.querySelectorAll('[data-set-lang]')) {
-      button.setAttribute('aria-pressed', String(button.dataset.setLang === lang));
-    }
+    for (const select of document.querySelectorAll('[data-set-lang]')) select.value = lang;
   }
 
   function effectiveTheme() {
@@ -52,8 +64,7 @@
     const toggle = document.querySelector('[data-toggle-theme]');
     if (!toggle) return;
     const next = effectiveTheme() === 'dark' ? 'light' : 'dark';
-    const labels = THEME_LABELS[root.dataset.lang === 'uk' ? 'uk' : 'en'];
-    toggle.setAttribute('aria-label', labels[next]);
+    toggle.setAttribute('aria-label', THEME_LABELS[root.dataset.lang][next]);
   }
 
   const savedTheme = load('theme');
@@ -67,16 +78,17 @@
     applyThemeLabel();
   });
 
+  document.addEventListener('change', (event) => {
+    const select = event.target instanceof Element ? event.target.closest('[data-set-lang]') : null;
+    if (!select || !LANGS.includes(select.value)) return;
+    lang = select.value;
+    save('lang', lang);
+    applyLang(lang);
+    applyThemeLabel();
+  });
+
   document.addEventListener('click', (event) => {
     const target = event.target instanceof Element ? event.target : null;
-    const langButton = target?.closest('[data-set-lang]');
-    if (langButton) {
-      lang = langButton.dataset.setLang;
-      save('lang', lang);
-      applyLang(lang);
-      applyThemeLabel();
-      return;
-    }
     if (target?.closest('[data-toggle-theme]')) {
       const next = effectiveTheme() === 'dark' ? 'light' : 'dark';
       root.dataset.theme = next;

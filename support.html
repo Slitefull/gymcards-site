@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-title-en="Support — Gym Cards" data-title-uk="Підтримка — Gym Cards">
+<html lang="en" data-title-en="Support — Gym Cards" data-title-uk="Підтримка — Gym Cards" data-title-pl="Gym Cards: pomoc" data-title-de="Gym Cards: Hilfe" data-title-es="Gym Cards: ayuda" data-title-pt-BR="Gym Cards: ajuda">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,14 +13,18 @@
 <div class="topbar">
   <nav>
     <a href="index.html">Gym Cards</a>
-    <a href="privacy.html"><span data-lang="en">Privacy</span><span data-lang="uk" lang="uk">Конфіденційність</span></a>
-    <a href="support.html"><span data-lang="en">Support</span><span data-lang="uk" lang="uk">Підтримка</span></a>
+    <a href="privacy.html"><span data-lang="en">Privacy</span><span data-lang="uk" lang="uk">Конфіденційність</span><span data-lang="pl" lang="pl">Prywatność</span><span data-lang="de" lang="de">Datenschutz</span><span data-lang="es" lang="es">Privacidad</span><span data-lang="pt-BR" lang="pt-BR">Privacidade</span></a>
+    <a href="support.html"><span data-lang="en">Support</span><span data-lang="uk" lang="uk">Підтримка</span><span data-lang="pl" lang="pl">Pomoc</span><span data-lang="de" lang="de">Hilfe</span><span data-lang="es" lang="es">Ayuda</span><span data-lang="pt-BR" lang="pt-BR">Ajuda</span></a>
   </nav>
   <div class="controls">
-    <div class="seg" role="group" aria-label="Language / Мова">
-      <button type="button" data-set-lang="en" lang="en" aria-pressed="false">EN</button>
-      <button type="button" data-set-lang="uk" lang="uk" aria-pressed="false">УК</button>
-    </div>
+    <select class="lang" data-set-lang aria-label="Language">
+      <option value="de" lang="de">Deutsch</option>
+      <option value="en" lang="en">English</option>
+      <option value="es" lang="es">Español</option>
+      <option value="pl" lang="pl">Polski</option>
+      <option value="pt-BR" lang="pt-BR">Português</option>
+      <option value="uk" lang="uk">Українська</option>
+    </select>
     <button type="button" class="theme-toggle" data-toggle-theme aria-label="Switch theme">
       <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg>
     </button>
@@ -125,8 +129,204 @@
 
 </div>
 
+<div data-lang="pl" lang="pl" id="pl">
+
+<header>
+  <h1>Pomoc</h1>
+  <p class="meta">Gym Cards · Maksym Tytechko</p>
+</header>
+
+<p class="lede">Napisz na <a href="mailto:0xmaksym@gmail.com">0xmaksym@gmail.com</a>. Podaj model telefonu i wersję systemu, a jeśli coś na ekranie wygląda źle, dołącz zrzut ekranu. Odpowiadamy po angielsku i po ukraińsku.</p>
+
+<div class="callout">
+  <p><strong>Zanim napiszesz o utraconych danych:</strong> sprawdź Ustawienia → Kosz. Usunięte treningi zostają tam i można je przywrócić.</p>
+</div>
+
+<h2>Częste pytania</h2>
+
+<h3>Jak zrobić kopię zapasową treningów?</h3>
+<p>Ustawienia → Dane → <strong>Eksport kopii JSON</strong>. Ten plik to pełna kopia zapasowa: treningi, ćwiczenia, serie, pomiary ciała i ustawienia. Zapisz go w miejscu, któremu ufasz: na dysku w chmurze, na komputerze albo w mailu wysłanym do siebie.</p>
+<p>Zdjęcia i filmy <em>nie</em> trafiają do pliku JSON, są tam tylko ich nazwy, więc po imporcie na innym telefonie treningi wrócą bez zdjęć i filmów. Automatyczna kopia (Gym Cards Pro) kopiuje na twój własny iCloud także zdjęcia i filmy.</p>
+
+<h3>Jak przenieść dane na nowy telefon?</h3>
+<ol>
+  <li>Na starym telefonie: Ustawienia → Dane → Eksport kopii JSON, a potem wyślij plik do siebie.</li>
+  <li>Na nowym telefonie: zainstaluj Gym Cards, potem Ustawienia → Dane → Import kopii JSON i wybierz ten plik.</li>
+</ol>
+<p>Z Gym Cards Pro możesz pominąć plik: włącz Automatyczną kopię na starym telefonie, a na nowym przywróć zakup i stuknij Ustawienia → Kopia zapasowa → Przywróć. Zdjęcia i filmy też wrócą.</p>
+
+<h3>Czy działa bez internetu?</h3>
+<p>Tak. Wszystko, co zapisujesz, działa offline. Aplikacja łączy się z siecią tylko po to, żeby sprawdzić aktualizacje, przy zakupach i ich przywracaniu oraz przy opcjonalnej kopii zapasowej na twój własny iCloud.</p>
+
+<h3>Nie przychodzą przypomnienia.</h3>
+<p>Sprawdź trzy rzeczy: czy powiadomienia dla Gym Cards są dozwolone w ustawieniach systemu; czy przypomnienie jest włączone w Ustawienia → Przypomnienia i wybrany jest co najmniej jeden dzień tygodnia; i czy optymalizacja baterii na Androidzie nie usypia aplikacji. Przypomnienia są lokalne, więc nie potrzebują internetu.</p>
+
+<h3>Dlaczego aplikacja prosi o dostęp do zdjęć?</h3>
+<p>Tylko wtedy, gdy stukniesz, żeby dodać zdjęcie lub wideo. Aplikacja kopiuje wybrany element do własnej pamięci i nigdy nie odczytuje reszty twojej biblioteki zdjęć. Zobacz <a href="privacy.html">politykę prywatności</a>.</p>
+
+<h3>Jak usunąć wszystko?</h3>
+<p>Odinstaluj aplikację. Razem z nią znikają baza danych, wszystkie dołączone zdjęcia i filmy oraz wszystkie ustawienia. Jeśli Automatyczna kopia była włączona, kopia zostaje też na twoim iCloud: usuń ją w Ustawienia → twoje imię i nazwisko → iCloud → Zarządzaj pamięcią masową konta → Gym Cards.</p>
+
+<h3>Czy mogę używać funtów zamiast kilogramów?</h3>
+<p>Ustawienia → Waga. Istniejące wpisy są przeliczane przy wyświetlaniu; nic nie jest nadpisywane.</p>
+
+<h3>Tekst jest za mały albo za duży.</h3>
+<p>Ustawienia → Rozmiar tekstu ma trzy stopnie. Gym Cards uwzględnia też systemowy rozmiar tekstu.</p>
+
+<h2>Zgłaszanie błędu</h2>
+<p>Wyślij nam: co robisz, czego oczekujesz, co dzieje się zamiast tego, model telefonu, wersję systemu i wersję aplikacji (Ustawienia → O aplikacji). Zrzut ekranu albo nagranie ekranu bardzo skraca wymianę wiadomości.</p>
+
+</div>
+
+<div data-lang="de" lang="de" id="de">
+
+<header>
+  <h1>Hilfe</h1>
+  <p class="meta">Gym Cards · Maksym Tytechko</p>
+</header>
+
+<p class="lede">Schreib an <a href="mailto:0xmaksym@gmail.com">0xmaksym@gmail.com</a>. Gib dein Handymodell und die Version des Betriebssystems an und, falls auf dem Bildschirm etwas falsch aussieht, einen Screenshot. Wir antworten auf Englisch und Ukrainisch.</p>
+
+<div class="callout">
+  <p><strong>Bevor du wegen verlorener Daten schreibst:</strong> Schau unter Einstellungen → Papierkorb nach. Gelöschte Trainings bleiben dort und lassen sich wiederherstellen.</p>
+</div>
+
+<h2>Häufige Fragen</h2>
+
+<h3>Wie sichere ich meine Trainings?</h3>
+<p>Einstellungen → Daten → <strong>JSON-Backup exportieren</strong>. Diese Datei ist ein komplettes Backup: Trainings, Übungen, Sätze, Körpermaße und Einstellungen. Speicher sie an einem Ort, dem du vertraust: in einem Cloud-Speicher, auf deinem Computer, in einer E-Mail an dich selbst.</p>
+<p>Fotos und Videos sind <em>nicht</em> in der JSON-Datei enthalten, nur ihre Namen. Wenn du sie auf einem anderen Handy importierst, kommen die Trainings also ohne ihre Medien zurück. Das Auto-Backup (Gym Cards Pro) kopiert auch Fotos und Videos in deine eigene iCloud.</p>
+
+<h3>Wie ziehe ich auf ein neues Handy um?</h3>
+<ol>
+  <li>Auf dem alten Handy: Einstellungen → Daten → JSON-Backup exportieren, und schick dir die Datei selbst.</li>
+  <li>Auf dem neuen Handy: Installiere Gym Cards, dann Einstellungen → Daten → JSON-Backup importieren und wähle diese Datei.</li>
+</ol>
+<p>Mit Gym Cards Pro geht es auch ohne Datei: Schalte auf dem alten Handy das Auto-Backup ein, stell dann auf dem neuen deinen Kauf wieder her und tippe auf Einstellungen → Backup → Wiederherstellen. Fotos und Videos kommen mit.</p>
+
+<h3>Funktioniert die App ohne Internet?</h3>
+<p>Ja. Alles, was du einträgst, funktioniert offline. Die App geht nur online, um nach App-Updates zu suchen, für Käufe und deren Wiederherstellung und für das optionale Backup in deine eigene iCloud.</p>
+
+<h3>Meine Erinnerungen kommen nicht an.</h3>
+<p>Prüf drei Dinge: Benachrichtigungen sind für Gym Cards in deinen Systemeinstellungen erlaubt; die Erinnerung ist unter Einstellungen → Erinnerungen eingeschaltet und mindestens ein Wochentag ist ausgewählt; und unter Android legt die Akku-Optimierung die App nicht still. Erinnerungen sind lokal, sie brauchen also kein Internet.</p>
+
+<h3>Warum fragt die App nach Zugriff auf meine Fotos?</h3>
+<p>Nur wenn du tippst, um ein Foto oder Video anzuhängen. Die App kopiert das ausgewählte Element in ihren eigenen Speicher und liest nie den Rest deiner Fotogalerie. Mehr dazu in der <a href="privacy.html">Datenschutzerklärung</a>.</p>
+
+<h3>Wie lösche ich alles?</h3>
+<p>Deinstalliere die App. Die Datenbank, alle angehängten Medien und alle Einstellungen werden mit ihr entfernt. Wenn du das Auto-Backup eingeschaltet hast, bleibt außerdem eine Kopie in deiner iCloud: Lösch sie unter Einstellungen → dein Name → iCloud → Accountspeicher verwalten → Gym Cards.</p>
+
+<h3>Kann ich Pfund statt Kilogramm nutzen?</h3>
+<p>Einstellungen → Gewicht. Vorhandene Einträge werden bei der Anzeige umgerechnet, nichts wird überschrieben.</p>
+
+<h3>Der Text ist zu klein oder zu groß.</h3>
+<p>Einstellungen → Textgröße hat drei Stufen. Gym Cards folgt außerdem der Textgröße, die du im System eingestellt hast.</p>
+
+<h2>Einen Fehler melden</h2>
+<p>Schick uns: was du gemacht hast, was du erwartet hast, was stattdessen passiert ist, dein Handymodell, deine Betriebssystemversion und die App-Version (Einstellungen → Über die App). Ein Screenshot oder eine Bildschirmaufnahme spart viel Hin und Her.</p>
+
+</div>
+
+<div data-lang="es" lang="es" id="es">
+
+<header>
+  <h1>Ayuda</h1>
+  <p class="meta">Gym Cards · Maksym Tytechko</p>
+</header>
+
+<p class="lede">Escribe a <a href="mailto:0xmaksym@gmail.com">0xmaksym@gmail.com</a>. Incluye el modelo de tu teléfono y la versión del sistema y, si algo se ve mal en la pantalla, una captura de pantalla. Respondemos en inglés y ucraniano.</p>
+
+<div class="callout">
+  <p><strong>Antes de escribirnos por datos perdidos:</strong> revisa Ajustes → Papelera. Los entrenamientos eliminados se quedan ahí y se pueden restaurar.</p>
+</div>
+
+<h2>Preguntas frecuentes</h2>
+
+<h3>¿Cómo hago una copia de seguridad de mis entrenamientos?</h3>
+<p>Ajustes → Datos → <strong>Exportar copia JSON</strong>. Ese archivo es una copia de seguridad completa: entrenamientos, ejercicios, series, medidas corporales y ajustes. Guárdalo en un lugar de confianza: una nube, tu PC, un correo que te envías a ti.</p>
+<p>Las fotos y los videos <em>no</em> van dentro del archivo JSON, solo sus nombres, así que al importarlo en otro teléfono los entrenamientos vuelven sin sus fotos ni videos. La copia automática (Gym Cards Pro) también copia las fotos y los videos a tu propio iCloud.</p>
+
+<h3>¿Cómo me paso a un teléfono nuevo?</h3>
+<ol>
+  <li>En el teléfono anterior: Ajustes → Datos → Exportar copia JSON, y envíate el archivo.</li>
+  <li>En el teléfono nuevo: instala Gym Cards, luego Ajustes → Datos → Importar copia JSON y elige ese archivo.</li>
+</ol>
+<p>Con Gym Cards Pro puedes saltarte el archivo: activa la copia automática en el teléfono anterior y luego, en el nuevo, restaura tu compra y toca Ajustes → Copia de seguridad → Restaurar. Las fotos y los videos también vuelven.</p>
+
+<h3>¿Funciona sin internet?</h3>
+<p>Sí. Todo lo que registras funciona sin conexión. La app solo se conecta a internet para buscar actualizaciones de la app, para compras y restauraciones, y para la copia de seguridad opcional en tu propio iCloud.</p>
+
+<h3>No me llegan los recordatorios.</h3>
+<p>Revisa tres cosas: que las notificaciones de Gym Cards estén permitidas en los ajustes del sistema; que el recordatorio esté activado en Ajustes → Recordatorios con al menos un día de la semana elegido; y que, en Android, la optimización de batería no esté suspendiendo la app. Los recordatorios son locales, así que no necesitan internet.</p>
+
+<h3>¿Por qué la app pide acceso a las fotos?</h3>
+<p>Solo cuando tocas para adjuntar una foto o un video. La app copia lo que eliges en su propio almacenamiento y nunca lee el resto de tu galería. Consulta la <a href="privacy.html">política de privacidad</a>.</p>
+
+<h3>¿Cómo lo borro todo?</h3>
+<p>Desinstala la app. La base de datos, todas las fotos y videos adjuntos y todos los ajustes se eliminan con ella. Si activaste la copia automática, también queda una copia en tu iCloud: bórrala en los ajustes del iPhone → tu nombre → iCloud → Gestionar almacenamiento de la cuenta → Gym Cards.</p>
+
+<h3>¿Puedo usar libras en vez de kilos?</h3>
+<p>Ajustes → Peso. Los registros existentes se convierten al mostrarse; no se reescribe nada.</p>
+
+<h3>El texto es demasiado pequeño o demasiado grande.</h3>
+<p>Ajustes → Tamaño del texto tiene tres pasos. Gym Cards también sigue el tamaño de texto de tu sistema.</p>
+
+<h2>Informar de un error</h2>
+<p>Envíanos qué hiciste, qué esperabas, qué pasó en su lugar, el modelo de tu teléfono, la versión del sistema y la versión de la app (Ajustes → Acerca de). Una captura o una grabación de pantalla nos ahorra muchas idas y vueltas.</p>
+
+</div>
+
+<div data-lang="pt-BR" lang="pt-BR" id="pt-BR">
+
+<header>
+  <h1>Ajuda</h1>
+  <p class="meta">Gym Cards · Maksym Tytechko</p>
+</header>
+
+<p class="lede">Escreva para <a href="mailto:0xmaksym@gmail.com">0xmaksym@gmail.com</a>. Informe o modelo do seu celular e a versão do sistema e, se algo parecer errado na tela, mande uma captura de tela. Respondemos em inglês e em ucraniano.</p>
+
+<div class="callout">
+  <p><strong>Antes de escrever sobre dados perdidos:</strong> confira Ajustes → Lixeira. Os treinos excluídos ficam lá e podem ser restaurados.</p>
+</div>
+
+<h2>Perguntas frequentes</h2>
+
+<h3>Como faço backup dos meus treinos?</h3>
+<p>Ajustes → Dados → <strong>Exportar backup JSON</strong>. Esse arquivo é um backup completo: treinos, exercícios, séries, medidas corporais e ajustes. Guarde em um lugar de confiança, como um drive na nuvem, o seu computador ou um e-mail para você.</p>
+<p>Fotos e vídeos <em>não</em> vão dentro do arquivo JSON, só os nomes deles. Por isso, ao importar em outro celular, os treinos voltam sem as mídias. O Backup automático (Gym Cards Pro) também copia fotos e vídeos para o seu próprio iCloud.</p>
+
+<h3>Como passo tudo para um celular novo?</h3>
+<ol>
+  <li>No celular antigo: Ajustes → Dados → Exportar backup JSON, e envie o arquivo para você.</li>
+  <li>No celular novo: instale o Gym Cards, depois vá em Ajustes → Dados → Importar backup JSON e escolha esse arquivo.</li>
+</ol>
+<p>Com o Gym Cards Pro, você não precisa do arquivo: ative o Backup automático no celular antigo e, no novo, restaure a sua compra e toque em Ajustes → Backup → Restaurar. As fotos e os vídeos vêm junto.</p>
+
+<h3>Funciona sem internet?</h3>
+<p>Sim. Tudo o que você registra funciona offline. O app só se conecta para verificar atualizações do app, para compras e restaurações, e para o backup opcional no seu próprio iCloud.</p>
+
+<h3>Meus lembretes não estão chegando.</h3>
+<p>Confira três coisas: as notificações estão permitidas para o Gym Cards nos ajustes do sistema; o lembrete está ativado em Ajustes → Lembretes, com pelo menos um dia da semana selecionado; e, no Android, a otimização de bateria não está suspendendo o app. Os lembretes são locais, então não precisam de internet.</p>
+
+<h3>Por que o app pede acesso às fotos?</h3>
+<p>Só quando você toca para anexar uma foto ou um vídeo. O app copia o item que você escolheu para o próprio armazenamento e nunca lê o resto da sua galeria. Veja a <a href="privacy.html">política de privacidade</a>.</p>
+
+<h3>Como excluo tudo?</h3>
+<p>Desinstale o app. O banco de dados, todas as mídias anexadas e todos os ajustes são removidos junto. Se você ativou o Backup automático, também fica uma cópia no seu iCloud: exclua em Ajustes → seu nome → iCloud → Gerenciar Armazenamento da Conta → Gym Cards.</p>
+
+<h3>Posso usar libras em vez de quilos?</h3>
+<p>Ajustes → Peso. Os registros existentes são convertidos na exibição; nada é reescrito.</p>
+
+<h3>O texto está pequeno ou grande demais.</h3>
+<p>Ajustes → Tamanho do texto tem três níveis. O Gym Cards também segue o tamanho de texto definido no sistema.</p>
+
+<h2>Como relatar um bug</h2>
+<p>Mande para nós: o que você fez, o que esperava, o que aconteceu no lugar, o modelo do celular, a versão do sistema e a versão do app (Ajustes → Sobre). Uma captura ou gravação de tela encurta muito a conversa.</p>
+
+</div>
+
 <footer>
-  <p>Gym Cards · <span data-lang="en">Maksym Tytechko</span><span data-lang="uk" lang="uk">Титечко Максим</span> · <a href="mailto:0xmaksym@gmail.com">0xmaksym@gmail.com</a></p>
+  <p>Gym Cards · <span data-lang="en">Maksym Tytechko</span><span data-lang="uk" lang="uk">Титечко Максим</span><span data-lang="pl" lang="pl">Maksym Tytechko</span><span data-lang="de" lang="de">Maksym Tytechko</span><span data-lang="es" lang="es">Maksym Tytechko</span><span data-lang="pt-BR" lang="pt-BR">Maksym Tytechko</span> · <a href="mailto:0xmaksym@gmail.com">0xmaksym@gmail.com</a></p>
 </footer>
 
 </main>
