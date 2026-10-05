@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html lang="en" data-title-en="Gym Cards changelog" data-title-uk="Gym Cards: що нового" data-title-pl="Gym Cards: zmiany" data-title-de="Gym Cards: Änderungen" data-title-es="Gym Cards: novedades" data-title-pt-BR="Gym Cards: novidades">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gym Cards changelog</title>
+<meta name="description" content="Every Gym Cards version and every update that arrived over the air, with what changed.">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="style.css">
+<script src="site.js"></script>
+</head>
+<body>
+<main>
+
+<div class="topbar">
+  <a class="brand" href="index.html"><img src="apple-touch-icon.png" alt="" width="28" height="28">Gym Cards</a>
+  <button type="button" class="menu-toggle" data-menu aria-expanded="false" aria-controls="site-menu" aria-label="Menu"><span></span></button>
+  <div class="menu" id="site-menu">
+    <div class="menu-inner">
+      <nav>
+        <a href="changelog.html" aria-current="page"><span data-lang="en">Changelog</span><span data-lang="uk" lang="uk">Що нового</span><span data-lang="pl" lang="pl">Zmiany</span><span data-lang="de" lang="de">Änderungen</span><span data-lang="es" lang="es">Novedades</span><span data-lang="pt-BR" lang="pt-BR">Novidades</span></a>
+        <a href="privacy.html"><span data-lang="en">Privacy</span><span data-lang="uk" lang="uk">Конфіденційність</span><span data-lang="pl" lang="pl">Prywatność</span><span data-lang="de" lang="de">Datenschutz</span><span data-lang="es" lang="es">Privacidad</span><span data-lang="pt-BR" lang="pt-BR">Privacidade</span></a>
+        <a href="support.html"><span data-lang="en">Support</span><span data-lang="uk" lang="uk">Підтримка</span><span data-lang="pl" lang="pl">Pomoc</span><span data-lang="de" lang="de">Hilfe</span><span data-lang="es" lang="es">Ayuda</span><span data-lang="pt-BR" lang="pt-BR">Ajuda</span></a>
+      </nav>
+      <div class="controls">
+        <select class="lang" data-set-lang aria-label="Language">
+          <option value="de" lang="de">Deutsch</option>
+          <option value="en" lang="en">English</option>
+          <option value="es" lang="es">Español</option>
+          <option value="pl" lang="pl">Polski</option>
+          <option value="pt-BR" lang="pt-BR">Português</option>
+          <option value="uk" lang="uk">Українська</option>
+        </select>
+        <button type="button" class="theme-toggle" data-toggle-theme aria-label="Switch theme">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<header class="log-head">
+  <h1><span data-lang="en">What’s new in Gym Cards</span><span data-lang="uk" lang="uk">Що нового в Gym Cards</span><span data-lang="pl" lang="pl">Co nowego w Gym Cards</span><span data-lang="de" lang="de">Neu in Gym Cards</span><span data-lang="es" lang="es">Novedades de Gym Cards</span><span data-lang="pt-BR" lang="pt-BR">Novidades do Gym Cards</span></h1>
+  <p class="lede"><span data-lang="en">Every version and every update that arrived over the air, newest first. The screenshots show the app as it looks today.</span><span data-lang="uk" lang="uk">Кожна версія й кожне оновлення, що прилетіло по повітрю, від найновішого. Скріншоти показують застосунок таким, яким він є сьогодні.</span><span data-lang="pl" lang="pl">Każda wersja i każda aktualizacja OTA, od najnowszej. Zrzuty ekranu pokazują aplikację taką, jaka jest dzisiaj.</span><span data-lang="de" lang="de">Jede Version und jedes Update ohne App Store, das neueste zuerst. Die Screenshots zeigen die App, wie sie heute aussieht.</span><span data-lang="es" lang="es">Cada versión y cada actualización OTA, de la más reciente a la más antigua. Las capturas muestran la app tal como es hoy.</span><span data-lang="pt-BR" lang="pt-BR">Cada versão e cada atualização OTA, da mais recente para a mais antiga. As capturas mostram o app como ele é hoje.</span></p>
+  <div class="facts" id="changelog-facts"></div>
+</header>
+
+<noscript><p class="meta">This page needs JavaScript to list the versions.</p></noscript>
+
+<div class="filters" id="changelog-filters" role="group"></div>
+
+<div class="releases" id="changelog"></div>
+
+<div class="note">
+  <div data-lang="en">
+    <h3>Good to know</h3>
+    <ul>
+      <li>Updates over the air change the app’s code without a new App Store version. They download in the background and apply on the next launch.</li>
+      <li>Since 2 October 2026 Gym Cards is also on Google Play, at version 1.4. Apple Health and iCloud backup are iPhone only.</li>
+      <li>Questions or ideas: <a href="mailto:0xmaksym@gmail.com">0xmaksym@gmail.com</a></li>
+    </ul>
+  </div>
+  <div data-lang="uk" lang="uk">
+    <h3>Варто знати</h3>
+    <ul>
+      <li>Оновлення по повітрю змінюють код застосунку без нової версії в App Store. Вони завантажуються у фоні й застосовуються з наступним запуском.</li>
+      <li>З 2 жовтня 2026 Gym Cards є і в Google Play, у версії 1.4. Apple Health і бекап в iCloud є лише на iPhone.</li>
+      <li>Питання чи ідеї: <a href="mailto:0xmaksym@gmail.com">0xmaksym@gmail.com</a></li>
+    </ul>
+  </div>
+  <div data-lang="pl" lang="pl">
+    <h3>Warto wiedzieć</h3>
+    <ul>
+      <li>Aktualizacje OTA zmieniają kod aplikacji bez nowej wersji w App Store. Pobierają się w tle i działają od następnego uruchomienia.</li>
+      <li>Od 2 października 2026 Gym Cards jest też w Google Play, w wersji 1.4. Apple Health i kopia w iCloud działają tylko na iPhonie.</li>
+      <li>Pytania lub pomysły: <a href="mailto:0xmaksym@gmail.com">0xmaksym@gmail.com</a></li>
+    </ul>
+  </div>
+  <div data-lang="de" lang="de">
+    <h3>Gut zu wissen</h3>
+    <ul>
+      <li>Updates ohne App Store ändern den Code der App ohne neue App-Store-Version. Sie laden im Hintergrund und gelten ab dem nächsten Start.</li>
+      <li>Seit dem 2. Oktober 2026 gibt es Gym Cards auch bei Google Play, in Version 1.4. Apple Health und das iCloud-Backup gibt es nur auf dem iPhone.</li>
+      <li>Fragen oder Ideen: <a href="mailto:0xmaksym@gmail.com">0xmaksym@gmail.com</a></li>
+    </ul>
+  </div>
+  <div data-lang="es" lang="es">
+    <h3>Conviene saber</h3>
+    <ul>
+      <li>Las actualizaciones OTA cambian el código de la app sin una versión nueva en la App Store. Se descargan en segundo plano y se aplican en el siguiente inicio.</li>
+      <li>Desde el 2 de octubre de 2026 Gym Cards también está en Google Play, en la versión 1.4. Apple Health y la copia en iCloud son solo para iPhone.</li>
+      <li>Preguntas o ideas: <a href="mailto:0xmaksym@gmail.com">0xmaksym@gmail.com</a></li>
+    </ul>
+  </div>
+  <div data-lang="pt-BR" lang="pt-BR">
+    <h3>Bom saber</h3>
+    <ul>
+      <li>As atualizações OTA mudam o código do app sem uma versão nova na App Store. Elas baixam em segundo plano e valem a partir da próxima abertura.</li>
+      <li>Desde 2 de outubro de 2026 o Gym Cards também está no Google Play, na versão 1.4. Apple Health e o backup no iCloud são só para iPhone.</li>
+      <li>Dúvidas ou ideias: <a href="mailto:0xmaksym@gmail.com">0xmaksym@gmail.com</a></li>
+    </ul>
+  </div>
+</div>
+
+<footer>
+  <p>Gym Cards · <span data-lang="en">Maksym Tytechko</span><span data-lang="uk" lang="uk">Титечко Максим</span><span data-lang="pl" lang="pl">Maksym Tytechko</span><span data-lang="de" lang="de">Maksym Tytechko</span><span data-lang="es" lang="es">Maksym Tytechko</span><span data-lang="pt-BR" lang="pt-BR">Maksym Tytechko</span> · <a href="mailto:0xmaksym@gmail.com">0xmaksym@gmail.com</a></p>
+</footer>
+
+</main>
+
+<script type="application/json" id="changelog-data">
+{
+  "languages": [
+    "en",
+    "uk",
+    "pl",
+    "de",
+    "es",
+    "pt-BR"
+  ],
+  "labels": {
+    "en": {
+      "store": "Released",
+      "review": "In review at Apple",
+      "ota": "Over the air",
+      "wip": "In progress",
+      "on": "Update for {v}",
+      "build": "Build {n}",
+      "next": "Next version",
+      "facts": {
+        "versions": "App versions",
+        "updates": "Over-the-air updates",
+        "languages": "Languages"
+      },
+      "all": "All",
+      "filters": "Filter versions"
+    },
+    "uk": {
+      "store": "Випущено",
+      "review": "На розгляді в Apple",
+      "ota": "По повітрю",
+      "wip": "У роботі",
+      "on": "Оновлення для {v}",
+      "build": "Збірка {n}",
+      "next": "Наступна версія",
+      "facts": {
+        "versions": "Версії застосунку",
+        "updates": "Оновлення по повітрю",
+        "languages": "Мови"
+      },
+      "all": "Усе",
+      "filters": "Фільтр версій"
+    },
+    "pl": {
+      "store": "Wydana",
+      "review": "W weryfikacji Apple",
+      "ota": "Aktualizacja OTA",
+      "wip": "W pracy",
+      "on": "Aktualizacja dla {v}",
+      "build": "Kompilacja {n}",
+      "next": "Następna wersja",
+      "facts": {
+        "versions": "Wersje aplikacji",
+        "updates": "Aktualizacje OTA",
+        "languages": "Języki"
+      },
+      "all": "Wszystko",
+      "filters": "Filtr wersji"
+    },
+    "de": {
+      "store": "Veröffentlicht",
+      "review": "In Prüfung bei Apple",
+      "ota": "OTA-Update",
+      "wip": "In Arbeit",
+      "on": "Update für {v}",
+      "build": "Build {n}",
+      "next": "Nächste Version",
+      "facts": {
+        "versions": "App-Versionen",
+        "updates": "OTA-Updates",
+        "languages": "Sprachen"
+      },
+      "all": "Alle",
+      "filters": "Versionen filtern"
+    },
+    "es": {
+      "store": "Publicada",
+      "review": "En revisión de Apple",
+      "ota": "Actualización OTA",
+      "wip": "En desarrollo",
+      "on": "Actualización para {v}",
+      "build": "Compilación {n}",
+      "next": "Próxima versión",
+      "facts": {
+        "versions": "Versiones de la app",
+        "updates": "Actualizaciones OTA",
+        "languages": "Idiomas"
+      },
+      "all": "Todo",
+      "filters": "Filtrar versiones"
+    },
+    "pt-BR": {
+      "store": "Publicada",
+      "review": "Em análise pela Apple",
+      "ota": "Atualização OTA",
+      "wip": "Em desenvolvimento",
+      "on": "Atualização para {v}",
+      "build": "Build {n}",
+      "next": "Próxima versão",
+      "facts": {
+        "versions": "Versões do app",
+        "updates": "Atualizações OTA",
+        "languages": "Idiomas"
+      },
+      "all": "Tudo",
+      "filters": "Filtrar versões"
+    }
+  },
+  "entries": [
+    {
+      "id": "1.4.0-ota-2",
+      "kind": "ota",
+      "on": "1.4.0",
+      "date": "2026-09-25",
+      "shots": [],
+      "en": {
+        "title": "71 fixes and a steadier Apple Health",
+        "notes": [
+          "A full audit of every screen and flow found 71 bugs. All of them are fixed.",
+          "The Apple Health permission prompt no longer vanishes with the sheet or freezes the app."
+        ]
+      },
+      "uk": {
+        "title": "71 виправлення й стабільніший Apple Health",
+        "notes": [
+          "Повний аудит кожного екрана й сценарію знайшов 71 баг. Усі виправлено.",
+          "Запит дозволу Apple Health більше не зникає разом зі шторкою й не вішає застосунок."
+        ]
+      },
+      "pl": {
+        "title": "71 poprawek i stabilniejsze Apple Health",
+        "notes": [
+          "Pełny przegląd każdego ekranu i ścieżki znalazł 71 błędów. Wszystkie są poprawione.",
+          "Prośba o dostęp do Apple Health nie znika już razem z arkuszem i nie zawiesza aplikacji."
+        ]
+      },
+      "de": {
+        "title": "71 Korrekturen und ein stabileres Apple Health",
+        "notes": [
+          "Eine vollständige Prüfung aller Bildschirme und Abläufe hat 71 Fehler gefunden. Alle sind behoben.",
+          "Die Abfrage für Apple Health verschwindet nicht mehr mit dem Blatt und friert die App nicht mehr ein."
+        ]
+      },
+      "es": {
+        "title": "71 correcciones y un Apple Health más estable",
+        "notes": [
+          "Una revisión completa de cada pantalla y cada flujo encontró 71 errores. Todos están corregidos.",
+          "La solicitud de permiso de Apple Health ya no desaparece con la hoja ni congela la app."
+        ]
+      },
+      "pt-BR": {
+        "title": "71 correções e um Apple Health mais estável",
+        "notes": [
+          "Uma revisão completa de cada tela e fluxo encontrou 71 bugs. Todos foram corrigidos.",
+          "O pedido de permissão do Apple Health não some mais junto com a folha nem trava o app."
+        ]
+      }
+    },
+    {
+      "id": "1.4.0-ota-1",
+      "kind": "ota",
+      "on": "1.4.0",
+      "date": "2026-09-25",
+      "shots": [],
+      "en": {
+        "title": "Volume by day and an optional tour",
+        "notes": [
+          "Statistics can show training volume for each of the last seven days.",
+          "A short tour of seven slides with live previews. Open it from the welcome screens or from Settings whenever you like."
+        ]
+      },
+      "uk": {
+        "title": "Об’єм по днях і тур на вибір",
+        "notes": [
+          "Статистика показує об’єм тренувань за кожен із семи останніх днів.",
+          "Короткий тур на сім слайдів із живими прев’ю. Відкривається з екранів привітання або з Налаштувань, коли захочете."
+        ]
+      },
+      "pl": {
+        "title": "Objętość dzień po dniu i przewodnik na życzenie",
+        "notes": [
+          "Statystyki pokazują objętość treningu dla każdego z ostatnich siedmiu dni.",
+          "Krótki przewodnik z siedmioma slajdami i podglądem na żywo. Otworzysz go z ekranów powitalnych albo z Ustawień, kiedy zechcesz."
+        ]
+      },
+      "de": {
+        "title": "Volumen pro Tag und eine Tour nach Wunsch",
+        "notes": [
+          "Die Statistik zeigt das Trainingsvolumen für jeden der letzten sieben Tage.",
+          "Eine kurze Tour mit sieben Folien und Live-Vorschauen. Du öffnest sie auf den Willkommensseiten oder in den Einstellungen, wann immer du willst."
+        ]
+      },
+      "es": {
+        "title": "Volumen por día y un recorrido opcional",
+        "notes": [
+          "Las estadísticas muestran el volumen de entrenamiento de cada uno de los últimos siete días.",
+          "Un recorrido breve de siete diapositivas con vistas previas en vivo. Ábrelo desde las pantallas de bienvenida o desde Ajustes cuando quieras."
+        ]
+      },
+      "pt-BR": {
+        "title": "Volume por dia e um tour opcional",
+        "notes": [
+          "As estatísticas mostram o volume de treino de cada um dos últimos sete dias.",
+          "Um tour curto de sete slides com prévias ao vivo. Abra pelas telas de boas-vindas ou pelos Ajustes quando quiser."
+        ]
+      }
+    },
+    {
+      "id": "1.4.0",
+      "kind": "store",
+      "build": 22,
+      "date": "2026-09-25",
+      "shots": [],
+      "en": {
+        "title": "Water, trend charts and sharing as Excel or PDF",
+        "notes": [
+          "Water tracking: a new card on Profile adds a glass in one tap, keeps a daily goal and saves each drink to Apple Health. A water widget shows the day on the Home Screen.",
+          "Trends: body weight and exercise progress on line charts.",
+          "Share a day or a month as text, Excel, CSV or PDF.",
+          "Drag sets by the handle to reorder them.",
+          "A workout opens as a full page, with arrows to the previous and next one."
+        ]
+      },
+      "uk": {
+        "title": "Вода, графіки динаміки й шеринг в Excel чи PDF",
+        "notes": [
+          "Вода: нова картка на Профілі додає склянку одним дотиком, тримає денну ціль і зберігає кожну порцію в Apple Health. Віджет води показує день на початковому екрані.",
+          "Динаміка: вага тіла й прогрес у вправах на лінійних графіках.",
+          "Діліться днем або місяцем як текстом, Excel, CSV чи PDF.",
+          "Підходи перетягуються за ручку, щоб змінити порядок.",
+          "Тренування відкривається окремою сторінкою зі стрілками до попереднього й наступного."
+        ]
+      },
+      "pl": {
+        "title": "Woda, wykresy trendów i udostępnianie jako Excel lub PDF",
+        "notes": [
+          "Nawodnienie: nowa karta w Profilu dodaje szklankę jednym dotknięciem, pilnuje dziennego celu i zapisuje każdą porcję w Apple Health. Widżet wody pokazuje dzień na ekranie początkowym.",
+          "Trendy: masa ciała i postępy w ćwiczeniach na wykresach liniowych.",
+          "Udostępnij dzień lub miesiąc jako tekst, Excel, CSV albo PDF.",
+          "Przeciągnij serię za uchwyt, aby zmienić kolejność.",
+          "Trening otwiera się jako pełna strona ze strzałkami do poprzedniego i następnego."
+        ]
+      },
+      "de": {
+        "title": "Wasser, Verlaufsdiagramme und Teilen als Excel oder PDF",
+        "notes": [
+          "Wasser: Eine neue Karte im Profil trägt ein Glas mit einem Tipp ein, behält dein Tagesziel im Blick und speichert jedes Getränk in Apple Health. Das Wasser-Widget zeigt den Tag auf dem Home-Bildschirm.",
+          "Verlauf: Körpergewicht und Übungsfortschritt als Liniendiagramme.",
+          "Teile einen Tag oder Monat als Text, Excel, CSV oder PDF.",
+          "Sätze lassen sich am Griff in eine neue Reihenfolge ziehen.",
+          "Ein Training öffnet sich als ganze Seite, mit Pfeilen zum vorherigen und nächsten."
+        ]
+      },
+      "es": {
+        "title": "Agua, gráficos de tendencia y compartir en Excel o PDF",
+        "notes": [
+          "Registro de agua: una nueva tarjeta en Perfil suma un vaso con un toque, sigue tu objetivo diario y guarda cada toma en Apple Health. El widget de agua muestra tu día en la pantalla de inicio.",
+          "Tendencias: peso corporal y progreso de ejercicios en gráficos de líneas.",
+          "Comparte un día o un mes como texto, Excel, CSV o PDF.",
+          "Arrastra las series por el asa para cambiar su orden.",
+          "Un entrenamiento se abre como página completa, con flechas al anterior y al siguiente."
+        ]
+      },
+      "pt-BR": {
+        "title": "Água, gráficos de tendência e compartilhamento em Excel ou PDF",
+        "notes": [
+          "Registro de água: um novo card no Perfil adiciona um copo com um toque, acompanha sua meta diária e salva cada registro no Apple Health. O widget de água mostra o dia na Tela de Início.",
+          "Tendências: peso corporal e evolução dos exercícios em gráficos de linha.",
+          "Compartilhe um dia ou um mês como texto, Excel, CSV ou PDF.",
+          "Arraste as séries pela alça para mudar a ordem.",
+          "O treino abre como uma página inteira, com setas para o anterior e o próximo."
+        ]
+      }
+    },
+    {
+      "id": "1.3.0",
+      "kind": "store",
+      "build": 21,
+      "date": "2026-09-24",
+      "shots": [
+        {
+          "src": "shots/v13-rest.jpg",
+          "en": "Rest bar over the workout",
+          "uk": "Таймер відпочинку поверх запису",
+          "pl": "Przerwa nad zapisem treningu",
+          "de": "Pausenleiste über dem Training",
+          "es": "Descanso sobre el entrenamiento",
+          "pt-BR": "Descanso sobre o treino"
+        },
+        {
+          "src": "shots/v13-plates.jpg",
+          "en": "Plates per side",
+          "uk": "Диски на кожен бік",
+          "pl": "Talerze na każdą stronę",
+          "de": "Scheiben pro Seite",
+          "es": "Discos por lado",
+          "pt-BR": "Anilhas de cada lado"
+        },
+        {
+          "src": "shots/v13-templates.jpg",
+          "en": "Start from a template",
+          "uk": "Старт із шаблону",
+          "pl": "Start z szablonu",
+          "de": "Start aus einer Vorlage",
+          "es": "Empezar desde una plantilla",
+          "pt-BR": "Começar por um modelo"
+        },
+        {
+          "src": "shots/v13-import.jpg",
+          "en": "Import preview",
+          "uk": "Прев'ю імпорту",
+          "pl": "Podgląd importu",
+          "de": "Importvorschau",
+          "es": "Vista previa de la importación",
+          "pt-BR": "Prévia da importação"
+        },
+        {
+          "src": "shots/v13-health.jpg",
+          "en": "Rest and Apple Health settings",
+          "uk": "Налаштування відпочинку й Apple Health",
+          "pl": "Ustawienia przerwy i Apple Health",
+          "de": "Einstellungen für Pause und Apple Health",
+          "es": "Ajustes de descanso y Apple Health",
+          "pt-BR": "Ajustes de descanso e Apple Health"
+        },
+        {
+          "src": "shots/v13-languages.jpg",
+          "en": "Language picker",
+          "uk": "Вибір мови",
+          "pl": "Wybór języka",
+          "de": "Sprachauswahl",
+          "es": "Selector de idioma",
+          "pt-BR": "Seletor de idioma"
+        }
+      ],
+      "en": {
+        "title": "Rest timer, templates, Apple Health and four new languages",
+        "notes": [
+          "Rest timer between sets: plus or minus 15 seconds, autostart after a set and a Live Activity on the lock screen.",
+          "Workout templates: save a session and start the next one from it in one tap, or repeat your last workout.",
+          "Apple Health: workouts with a duration are saved as strength training. Gym Cards reads nothing from Health.",
+          "Plate calculator: the bar drawn from one side, the plates for each side and a bar weight for kg and lb.",
+          "Warm-up sets up to your working weight in one tap.",
+          "Import from Strong and Hevy: pick the CSV, check the preview, import. The same file never adds anything twice.",
+          "Polish, German, Spanish and Portuguese (Brazil) join English and Ukrainian.",
+          "A gentle rating request after your fifth workout, and a Rate Gym Cards row in Settings."
+        ]
+      },
+      "uk": {
+        "title": "Таймер відпочинку, шаблони, Apple Health і чотири нові мови",
+        "notes": [
+          "Таймер відпочинку між підходами: плюс або мінус 15 секунд, автостарт після підходу й Live Activity на екрані блокування.",
+          "Шаблони тренувань: збережіть тренування й почніть наступне з нього одним дотиком або повторіть останнє.",
+          "Apple Health: тренування з тривалістю зберігаються як силові. Gym Cards нічого не читає з Health.",
+          "Калькулятор дисків: штанга з одного боку, диски на кожен бік і вага грифа окремо для kg і lb.",
+          "Розминочні підходи до робочої ваги одним дотиком.",
+          "Імпорт зі Strong і Hevy: виберіть CSV, перегляньте прев'ю, імпортуйте. Той самий файл нічого не додасть двічі.",
+          "До англійської та української додалися польська, німецька, іспанська й португальська (Бразилія).",
+          "Ненав’язливе прохання оцінити застосунок після п’ятого тренування й рядок «Оцінити Gym Cards» у налаштуваннях."
+        ]
+      },
+      "pl": {
+        "title": "Minutnik przerwy, szablony, Apple Health i cztery nowe języki",
+        "notes": [
+          "Minutnik przerwy między seriami: plus lub minus 15 sekund, autostart po serii i Live Activity na ekranie blokady.",
+          "Szablony treningów: zapisz trening i zacznij kolejny jednym dotknięciem albo powtórz ostatni.",
+          "Apple Health: treningi z czasem trwania zapisują się jako trening siłowy. Gym Cards nic nie czyta z Health.",
+          "Kalkulator talerzy: gryf narysowany z jednej strony, talerze na każdą stronę i waga gryfu osobno dla kg i lb.",
+          "Serie rozgrzewkowe do ciężaru roboczego jednym dotknięciem.",
+          "Import ze Strong i Hevy: wybierz plik CSV, sprawdź podgląd, zaimportuj. Ten sam plik nie doda niczego dwa razy.",
+          "Do angielskiego i ukraińskiego dołączają polski, niemiecki, hiszpański i portugalski (Brazylia).",
+          "Dyskretna prośba o ocenę po piątym treningu i wiersz „Oceń Gym Cards” w ustawieniach."
+        ]
+      },
+      "de": {
+        "title": "Pausentimer, Vorlagen, Apple Health und vier neue Sprachen",
+        "notes": [
+          "Pausentimer zwischen den Sätzen: plus oder minus 15 Sekunden, Autostart nach einem Satz und eine Live Activity auf dem Sperrbildschirm.",
+          "Trainingsvorlagen: Speichere ein Training und starte das nächste mit einem Tipp daraus, oder wiederhole dein letztes Training.",
+          "Apple Health: Trainings mit Dauer werden als Krafttraining gespeichert. Gym Cards liest nichts aus Health.",
+          "Scheibenrechner: die Stange von einer Seite gezeichnet, die Scheiben pro Seite und das Stangengewicht getrennt für kg und lb.",
+          "Aufwärmsätze bis zum Arbeitsgewicht mit einem Tipp.",
+          "Import aus Strong und Hevy: CSV auswählen, Vorschau prüfen, importieren. Dieselbe Datei fügt nie etwas doppelt hinzu.",
+          "Polnisch, Deutsch, Spanisch und Portugiesisch (Brasilien) kommen zu Englisch und Ukrainisch dazu.",
+          "Eine dezente Bitte um Bewertung nach dem fünften Training und eine Zeile „Gym Cards bewerten“ in den Einstellungen."
+        ]
+      },
+      "es": {
+        "title": "Temporizador de descanso, plantillas, Apple Health y cuatro idiomas nuevos",
+        "notes": [
+          "Temporizador de descanso entre series: más o menos 15 segundos, inicio automático tras una serie y una Live Activity en la pantalla de bloqueo.",
+          "Plantillas de entrenamiento: guarda una sesión y empieza la siguiente desde ella con un toque, o repite la última.",
+          "Apple Health: los entrenamientos con duración se guardan como entrenamiento de fuerza. Gym Cards no lee nada de Health.",
+          "Calculadora de discos: la barra dibujada desde un lado, los discos por lado y el peso de la barra por separado para kg y lb.",
+          "Series de calentamiento hasta tu peso de trabajo con un toque.",
+          "Importación desde Strong y Hevy: elige el CSV, revisa la vista previa e importa. El mismo archivo nunca añade nada dos veces.",
+          "El polaco, el alemán, el español y el portugués (Brasil) se suman al inglés y al ucraniano.",
+          "Una petición discreta de valoración tras tu quinto entrenamiento y una fila «Valora Gym Cards» en Ajustes."
+        ]
+      },
+      "pt-BR": {
+        "title": "Timer de descanso, modelos, Apple Health e quatro idiomas novos",
+        "notes": [
+          "Timer de descanso entre as séries: mais ou menos 15 segundos, início automático após uma série e uma Live Activity na tela de bloqueio.",
+          "Modelos de treino: salve uma sessão e comece a próxima a partir dela com um toque, ou repita o último treino.",
+          "Apple Health: treinos com duração são salvos como treino de força. O Gym Cards não lê nada do Health.",
+          "Calculadora de anilhas: a barra desenhada de um lado, as anilhas de cada lado e o peso da barra separado para kg e lb.",
+          "Séries de aquecimento até a carga de trabalho com um toque.",
+          "Importação do Strong e do Hevy: escolha o CSV, confira a prévia e importe. O mesmo arquivo nunca adiciona nada duas vezes.",
+          "Polonês, alemão, espanhol e português (Brasil) se juntam ao inglês e ao ucraniano.",
+          "Um pedido discreto de avaliação depois do quinto treino e uma linha “Avaliar o Gym Cards” nos Ajustes."
+        ]
+      }
+    },
+    {
+      "id": "1.2.0-ota",
+      "kind": "ota",
+      "on": "1.2.0",
+      "date": "2026-09-18",
+      "shots": [
+        {
+          "src": "shots/v12-goals.jpg",
+          "en": "Goals with a progress ring",
+          "uk": "Цілі з кільцем прогресу",
+          "pl": "Cele z pierścieniem postępu",
+          "de": "Ziele mit Fortschrittsring",
+          "es": "Objetivos con anillo de progreso",
+          "pt-BR": "Metas com anel de progresso"
+        }
+      ],
+      "en": {
+        "title": "Safer backup and honest goals",
+        "notes": [
+          "Backup never overwrites your iCloud copy: a fresh install asks whether to restore it or replace it.",
+          "Restoring on a new iPhone downloads the files from iCloud first and checks them before touching your diary.",
+          "Importing or restoring keeps your settings and your avatar.",
+          "A body-weight goal no longer completes on your first weigh-in, and editing a goal keeps its progress.",
+          "Deleting a workout forever asks first, and the month PDF respects pounds."
+        ]
+      },
+      "uk": {
+        "title": "Надійніший бекап і чесні цілі",
+        "notes": [
+          "Бекап ніколи не затирає копію в iCloud: нова інсталяція питає, відновити її чи замінити.",
+          "Відновлення на новому iPhone спершу завантажує файли з iCloud і перевіряє їх, а вже потім торкається щоденника.",
+          "Імпорт і відновлення зберігають ваші налаштування й аватар.",
+          "Ціль за вагою тіла більше не виконується з першого ж зважування, а редагування цілі зберігає прогрес.",
+          "Остаточне видалення тренування спершу питає, а PDF місяця враховує фунти."
+        ]
+      },
+      "pl": {
+        "title": "Bezpieczniejsza kopia i uczciwe cele",
+        "notes": [
+          "Kopia zapasowa nigdy nie nadpisuje kopii w iCloud: nowa instalacja pyta, czy ją przywrócić, czy zastąpić.",
+          "Przywracanie na nowym iPhonie najpierw pobiera pliki z iCloud i sprawdza je, zanim dotknie dziennika.",
+          "Import i przywracanie zachowują ustawienia i awatar.",
+          "Cel wagi ciała nie kończy się już przy pierwszym ważeniu, a edycja celu zachowuje postęp.",
+          "Trwałe usunięcie treningu najpierw pyta, a PDF miesiąca uwzględnia funty."
+        ]
+      },
+      "de": {
+        "title": "Sichereres Backup und ehrliche Ziele",
+        "notes": [
+          "Das Backup überschreibt nie deine iCloud-Kopie: Eine frische Installation fragt, ob sie wiederhergestellt oder ersetzt werden soll.",
+          "Die Wiederherstellung auf einem neuen iPhone lädt die Dateien zuerst aus iCloud und prüft sie, bevor sie dein Tagebuch anfasst.",
+          "Import und Wiederherstellung behalten deine Einstellungen und deinen Avatar.",
+          "Ein Körpergewichtsziel ist nicht mehr beim ersten Wiegen erreicht, und beim Bearbeiten eines Ziels bleibt der Fortschritt erhalten.",
+          "Endgültiges Löschen fragt vorher nach, und das Monats-PDF beachtet Pfund."
+        ]
+      },
+      "es": {
+        "title": "Copia de seguridad más segura y objetivos honestos",
+        "notes": [
+          "La copia de seguridad nunca sobrescribe tu copia de iCloud: una instalación nueva pregunta si restaurarla o reemplazarla.",
+          "Restaurar en un iPhone nuevo descarga primero los archivos de iCloud y los comprueba antes de tocar tu diario.",
+          "Importar o restaurar conserva tus ajustes y tu avatar.",
+          "Un objetivo de peso corporal ya no se cumple en el primer pesaje, y editar un objetivo conserva el progreso.",
+          "Eliminar un entrenamiento para siempre pide confirmación, y el PDF del mes respeta las libras."
+        ]
+      },
+      "pt-BR": {
+        "title": "Backup mais seguro e metas honestas",
+        "notes": [
+          "O backup nunca sobrescreve sua cópia no iCloud: uma instalação nova pergunta se deve restaurá-la ou substituí-la.",
+          "Restaurar em um iPhone novo baixa primeiro os arquivos do iCloud e os confere antes de mexer no seu diário.",
+          "Importar ou restaurar mantém seus ajustes e seu avatar.",
+          "Uma meta de peso corporal não é mais concluída na primeira pesagem, e editar uma meta mantém o progresso.",
+          "Excluir um treino para sempre pede confirmação, e o PDF do mês respeita libras."
+        ]
+      }
+    },
+    {
+      "id": "1.2.0",
+      "kind": "store",
+      "build": 16,
+      "date": "2026-09",
+      "shots": [
+        {
+          "src": "shots/v12-pro.jpg",
+          "en": "Gym Cards Pro",
+          "uk": "Gym Cards Pro",
+          "pl": "Gym Cards Pro",
+          "de": "Gym Cards Pro",
+          "es": "Gym Cards Pro",
+          "pt-BR": "Gym Cards Pro"
+        },
+        {
+          "src": "shots/v12-perks.jpg",
+          "en": "Everything in Pro",
+          "uk": "Усе, що входить у Pro",
+          "pl": "Wszystko w Pro",
+          "de": "Alles in Pro",
+          "es": "Todo lo que incluye Pro",
+          "pt-BR": "Tudo o que vem no Pro"
+        },
+        {
+          "src": "shots/v12-stats.jpg",
+          "en": "Statistics and recaps",
+          "uk": "Статистика й підсумки",
+          "pl": "Statystyki i podsumowania",
+          "de": "Statistik und Rückblicke",
+          "es": "Estadísticas y resúmenes",
+          "pt-BR": "Estatísticas e retrospectivas"
+        }
+      ],
+      "en": {
+        "title": "Gym Cards Pro, goals, recaps, widgets and backup",
+        "notes": [
+          "Gym Cards Pro is a one-time purchase. Everyone who installed Gym Cards before 1.2 gets it free.",
+          "Goals for a lift, a weekly rhythm or body weight, with a progress ring and a forecast. The first goal is free.",
+          "Month and year recaps you can share as stories. Pro.",
+          "Progress photos: mark them and compare with a slider for free; overlay, timelapse and sharing come with Pro.",
+          "Six themes with matching app icons. Pro.",
+          "Analytics: a year heatmap, estimated max and best sets by rep range. Pro.",
+          "Week and month widgets for the home screen. Pro.",
+          "Automatic backup to your own iCloud. Pro."
+        ]
+      },
+      "uk": {
+        "title": "Gym Cards Pro, цілі, підсумки, віджети й бекап",
+        "notes": [
+          "Gym Cards Pro купується один раз. Усі, хто встановив Gym Cards до 1.2, отримують його безкоштовно.",
+          "Цілі для вправи, тижневого ритму або ваги тіла, з кільцем прогресу й прогнозом. Перша ціль безкоштовна.",
+          "Підсумки місяця й року, якими можна поділитися як сторіз. Pro.",
+          "Фото прогресу: позначати й порівнювати повзунком можна безкоштовно, а накладання, таймлапс і поширення доступні в Pro.",
+          "Шість тем із відповідними іконками застосунку. Pro.",
+          "Аналітика: теплова карта року, розрахунковий максимум і найкращі підходи за діапазоном повторень. Pro.",
+          "Віджети тижня й місяця для головного екрана. Pro.",
+          "Автоматичний бекап у ваш власний iCloud. Pro."
+        ]
+      },
+      "pl": {
+        "title": "Gym Cards Pro, cele, podsumowania, widżety i kopia zapasowa",
+        "notes": [
+          "Gym Cards Pro kupujesz raz. Każdy, kto zainstalował Gym Cards przed wersją 1.2, dostaje je za darmo.",
+          "Cele dla ćwiczenia, tygodniowego rytmu albo wagi ciała, z pierścieniem postępu i prognozą. Pierwszy cel jest darmowy.",
+          "Podsumowania miesiąca i roku do udostępnienia jako relacje. Pro.",
+          "Zdjęcia postępu: oznaczanie i porównanie suwakiem za darmo, nakładanie, timelapse i udostępnianie w Pro.",
+          "Sześć motywów z pasującymi ikonami aplikacji. Pro.",
+          "Analityka: mapa cieplna roku, szacowane maksimum i najlepsze serie według zakresu powtórzeń. Pro.",
+          "Widżety tygodnia i miesiąca na ekran główny. Pro.",
+          "Automatyczna kopia zapasowa w Twoim własnym iCloud. Pro."
+        ]
+      },
+      "de": {
+        "title": "Gym Cards Pro, Ziele, Rückblicke, Widgets und Backup",
+        "notes": [
+          "Gym Cards Pro ist ein einmaliger Kauf. Wer Gym Cards vor 1.2 installiert hat, bekommt es kostenlos.",
+          "Ziele für eine Übung, einen Wochenrhythmus oder das Körpergewicht, mit Fortschrittsring und Prognose. Das erste Ziel ist kostenlos.",
+          "Monats- und Jahresrückblicke zum Teilen als Stories. Pro.",
+          "Fortschrittsfotos: Markieren und Vergleichen mit dem Schieberegler ist kostenlos, Überlagerung, Zeitraffer und Teilen gibt es mit Pro.",
+          "Sechs Designs mit passenden App-Symbolen. Pro.",
+          "Analysen: Jahres-Heatmap, geschätztes Maximum und Bestwerte nach Wiederholungsbereich. Pro.",
+          "Wochen- und Monats-Widgets für den Home-Bildschirm. Pro.",
+          "Automatisches Backup in deine eigene iCloud. Pro."
+        ]
+      },
+      "es": {
+        "title": "Gym Cards Pro, objetivos, resúmenes, widgets y copia de seguridad",
+        "notes": [
+          "Gym Cards Pro es una compra única. Quien instaló Gym Cards antes de la 1.2 lo recibe gratis.",
+          "Objetivos para un ejercicio, un ritmo semanal o el peso corporal, con anillo de progreso y previsión. El primer objetivo es gratis.",
+          "Resúmenes del mes y del año para compartir como historias. Pro.",
+          "Fotos de progreso: marcarlas y compararlas con un deslizador es gratis; la superposición, el timelapse y compartir llegan con Pro.",
+          "Seis temas con iconos de app a juego. Pro.",
+          "Analítica: mapa de calor del año, máximo estimado y mejores series por rango de repeticiones. Pro.",
+          "Widgets de semana y de mes para la pantalla de inicio. Pro.",
+          "Copia de seguridad automática en tu propio iCloud. Pro."
+        ]
+      },
+      "pt-BR": {
+        "title": "Gym Cards Pro, metas, retrospectivas, widgets e backup",
+        "notes": [
+          "O Gym Cards Pro é uma compra única. Quem instalou o Gym Cards antes da 1.2 ganha de graça.",
+          "Metas para um exercício, um ritmo semanal ou o peso corporal, com anel de progresso e previsão. A primeira meta é grátis.",
+          "Retrospectivas do mês e do ano para compartilhar como stories. Pro.",
+          "Fotos de progresso: marcar e comparar com um controle deslizante é grátis; sobreposição, timelapse e compartilhamento vêm com o Pro.",
+          "Seis temas com ícones do app combinando. Pro.",
+          "Análises: mapa de calor do ano, máximo estimado e melhores séries por faixa de repetições. Pro.",
+          "Widgets de semana e de mês para a tela de início. Pro.",
+          "Backup automático no seu próprio iCloud. Pro."
+        ]
+      }
+    },
+    {
+      "id": "1.1.0-ota-2",
+      "kind": "ota",
+      "on": "1.1.0",
+      "date": "2026-09-18",
+      "shots": [
+        {
+          "src": "shots/v11-recap.jpg",
+          "en": "Month in review",
+          "uk": "Підсумок місяця",
+          "pl": "Podsumowanie miesiąca",
+          "de": "Monatsrückblick",
+          "es": "Resumen del mes",
+          "pt-BR": "Retrospectiva do mês"
+        },
+        {
+          "src": "shots/v11-themes.jpg",
+          "en": "Themes and app icons",
+          "uk": "Теми й іконки застосунку",
+          "pl": "Motywy i ikony aplikacji",
+          "de": "Designs und App-Symbole",
+          "es": "Temas e iconos de la app",
+          "pt-BR": "Temas e ícones do app"
+        }
+      ],
+      "en": {
+        "title": "Goals, recaps, themes and progress photos for 1.1",
+        "notes": [
+          "Goals, month and year recaps, six themes, progress photo comparison and the new analytics arrived without an App Store update.",
+          "On 1.1 all of it is free, as a thank-you to everyone who came early.",
+          "Refreshed profile and media screens."
+        ]
+      },
+      "uk": {
+        "title": "Цілі, підсумки, теми й фото прогресу для 1.1",
+        "notes": [
+          "Цілі, підсумки місяця й року, шість тем, порівняння фото прогресу й нова аналітика прилетіли без оновлення в App Store.",
+          "На 1.1 усе це безкоштовно, як подяка всім, хто прийшов першим.",
+          "Оновлені екрани профілю й медіа."
+        ]
+      },
+      "pl": {
+        "title": "Cele, podsumowania, motywy i zdjęcia postępu dla 1.1",
+        "notes": [
+          "Cele, podsumowania miesiąca i roku, sześć motywów, porównanie zdjęć postępu i nowa analityka dotarły bez aktualizacji w App Store.",
+          "W wersji 1.1 wszystko to jest darmowe, jako podziękowanie dla pierwszych użytkowników.",
+          "Odświeżone ekrany profilu i multimediów."
+        ]
+      },
+      "de": {
+        "title": "Ziele, Rückblicke, Designs und Fortschrittsfotos für 1.1",
+        "notes": [
+          "Ziele, Monats- und Jahresrückblicke, sechs Designs, der Vergleich von Fortschrittsfotos und die neuen Analysen kamen ohne App-Store-Update.",
+          "In 1.1 ist all das kostenlos, als Dankeschön an alle, die früh dabei waren.",
+          "Überarbeitete Profil- und Medienansichten."
+        ]
+      },
+      "es": {
+        "title": "Objetivos, resúmenes, temas y fotos de progreso para la 1.1",
+        "notes": [
+          "Los objetivos, los resúmenes del mes y del año, seis temas, la comparación de fotos de progreso y la nueva analítica llegaron sin actualizar la App Store.",
+          "En la 1.1 todo esto es gratis, como agradecimiento a quienes llegaron primero.",
+          "Pantallas de perfil y de multimedia renovadas."
+        ]
+      },
+      "pt-BR": {
+        "title": "Metas, retrospectivas, temas e fotos de progresso para a 1.1",
+        "notes": [
+          "Metas, retrospectivas do mês e do ano, seis temas, comparação de fotos de progresso e as novas análises chegaram sem atualização na App Store.",
+          "Na 1.1 tudo isso é grátis, como agradecimento a quem chegou cedo.",
+          "Telas de perfil e de mídia renovadas."
+        ]
+      }
+    },
+    {
+      "id": "1.1.0-ota-1",
+      "kind": "ota",
+      "on": "1.1.0",
+      "date": "2026-09-17",
+      "shots": [
+        {
+          "src": "shots/v11-history.jpg",
+          "en": "Exercise history, page by page",
+          "uk": "Історія вправи сторінками",
+          "pl": "Historia ćwiczenia stronami",
+          "de": "Übungsverlauf seitenweise",
+          "es": "Historial del ejercicio por páginas",
+          "pt-BR": "Histórico do exercício por páginas"
+        },
+        {
+          "src": "shots/v11-sheet.jpg",
+          "en": "A bottom sheet for the month",
+          "uk": "Нижня панель місяця",
+          "pl": "Dolny panel miesiąca",
+          "de": "Unteres Panel für den Monat",
+          "es": "Panel inferior del mes",
+          "pt-BR": "Painel inferior do mês"
+        }
+      ],
+      "en": {
+        "title": "Exercise history and livelier sheets",
+        "notes": [
+          "Exercise history loads page by page, so long histories open at once.",
+          "Bottom sheets were rebuilt to follow your finger."
+        ]
+      },
+      "uk": {
+        "title": "Історія вправ і живіші нижні панелі",
+        "notes": [
+          "Історія вправи завантажується сторінками, тож довга історія відкривається одразу.",
+          "Нижні панелі переписані й тепер слідують за пальцем."
+        ]
+      },
+      "pl": {
+        "title": "Historia ćwiczeń i żywsze panele",
+        "notes": [
+          "Historia ćwiczenia wczytuje się stronami, więc długa historia otwiera się od razu.",
+          "Dolne panele przebudowano, teraz podążają za palcem."
+        ]
+      },
+      "de": {
+        "title": "Übungsverlauf und lebendigere Panels",
+        "notes": [
+          "Der Übungsverlauf lädt seitenweise, sodass auch lange Verläufe sofort öffnen.",
+          "Die unteren Panels wurden neu gebaut und folgen jetzt dem Finger."
+        ]
+      },
+      "es": {
+        "title": "Historial de ejercicios y paneles más vivos",
+        "notes": [
+          "El historial de cada ejercicio se carga por páginas, así que los historiales largos se abren al instante.",
+          "Los paneles inferiores se rehicieron y ahora siguen tu dedo."
+        ]
+      },
+      "pt-BR": {
+        "title": "Histórico de exercícios e painéis mais vivos",
+        "notes": [
+          "O histórico de cada exercício carrega por páginas, então históricos longos abrem na hora.",
+          "Os painéis inferiores foram refeitos e agora acompanham o dedo."
+        ]
+      }
+    },
+    {
+      "id": "1.1.0",
+      "kind": "store",
+      "build": 5,
+      "date": "2026-09-16",
+      "shots": [
+        {
+          "src": "shots/v11-onboarding.jpg",
+          "en": "The card-deck welcome",
+          "uk": "Знайомство колодою карток",
+          "pl": "Powitanie z talią kart",
+          "de": "Begrüßung als Kartenstapel",
+          "es": "Bienvenida en forma de baraja",
+          "pt-BR": "Boas-vindas em forma de baralho"
+        },
+        {
+          "src": "shots/v11-workout.jpg",
+          "en": "Workout card with tonnage up front",
+          "uk": "Картка тренування з тоннажем на першому плані",
+          "pl": "Karta treningu z tonażem na pierwszym planie",
+          "de": "Trainingskarte mit dem Volumen vorn",
+          "es": "Tarjeta de entrenamiento con el tonelaje delante",
+          "pt-BR": "Cartão de treino com a tonelagem em destaque"
+        },
+        {
+          "src": "shots/v11-achievements.jpg",
+          "en": "Achievements",
+          "uk": "Досягнення",
+          "pl": "Osiągnięcia",
+          "de": "Erfolge",
+          "es": "Logros",
+          "pt-BR": "Conquistas"
+        },
+        {
+          "src": "shots/v11-profile.jpg",
+          "en": "Profile card",
+          "uk": "Картка профілю",
+          "pl": "Karta profilu",
+          "de": "Profilkarte",
+          "es": "Tarjeta de perfil",
+          "pt-BR": "Cartão de perfil"
+        }
+      ],
+      "en": {
+        "title": "Achievements, a new look and updates over the air",
+        "notes": [
+          "Achievements with their own screen, a profile card and a banner for every new unlock.",
+          "A new look: a card-deck onboarding, a workout card led by tonnage and the month colour glowing on the home screen.",
+          "A live profile card with workouts, records and weeks in a row.",
+          "A new app icon.",
+          "Saving a workout became about 20 times faster.",
+          "Updates over the air: fixes can now arrive without a new App Store version."
+        ]
+      },
+      "uk": {
+        "title": "Досягнення, новий вигляд і оновлення по повітрю",
+        "notes": [
+          "Досягнення з власним екраном, карткою в профілі й банером для кожного нового.",
+          "Новий вигляд: знайомство у вигляді колоди карток, картка тренування з тоннажем на першому плані й колір місяця, що світиться на головному екрані.",
+          "Жива картка профілю з тренуваннями, рекордами й тижнями поспіль.",
+          "Нова іконка застосунку.",
+          "Збереження тренування стало приблизно в 20 разів швидшим.",
+          "Оновлення по повітрю: виправлення тепер приходять без нової версії в App Store."
+        ]
+      },
+      "pl": {
+        "title": "Osiągnięcia, nowy wygląd i aktualizacje OTA",
+        "notes": [
+          "Osiągnięcia z własnym ekranem, kartą w profilu i banerem przy każdym nowym.",
+          "Nowy wygląd: wprowadzenie jako talia kart, karta treningu z tonażem na pierwszym planie i kolor miesiąca świecący na ekranie głównym.",
+          "Żywa karta profilu z treningami, rekordami i tygodniami z rzędu.",
+          "Nowa ikona aplikacji.",
+          "Zapisywanie treningu stało się około 20 razy szybsze.",
+          "Aktualizacje OTA: poprawki mogą teraz docierać bez nowej wersji w App Store."
+        ]
+      },
+      "de": {
+        "title": "Erfolge, ein neuer Look und Updates ohne App Store",
+        "notes": [
+          "Erfolge mit eigenem Bildschirm, einer Profilkarte und einem Banner für jeden neuen Erfolg.",
+          "Ein neuer Look: ein Einstieg als Kartenstapel, eine Trainingskarte mit dem Volumen im Vordergrund und die Monatsfarbe, die auf dem Startbildschirm leuchtet.",
+          "Eine lebendige Profilkarte mit Trainings, Rekorden und Wochen in Folge.",
+          "Ein neues App-Symbol.",
+          "Das Speichern eines Trainings ist rund 20-mal schneller.",
+          "Updates ohne App Store: Korrekturen kommen jetzt auch ohne neue App-Store-Version."
+        ]
+      },
+      "es": {
+        "title": "Logros, un aspecto nuevo y actualizaciones OTA",
+        "notes": [
+          "Logros con su propia pantalla, una tarjeta en el perfil y un aviso por cada logro nuevo.",
+          "Un aspecto nuevo: una bienvenida en forma de baraja, una tarjeta de entrenamiento encabezada por el tonelaje y el color del mes brillando en la pantalla de inicio.",
+          "Una tarjeta de perfil viva con entrenamientos, récords y semanas seguidas.",
+          "Un icono de app nuevo.",
+          "Guardar un entrenamiento es unas 20 veces más rápido.",
+          "Actualizaciones OTA: las correcciones pueden llegar sin una versión nueva en la App Store."
+        ]
+      },
+      "pt-BR": {
+        "title": "Conquistas, visual novo e atualizações OTA",
+        "notes": [
+          "Conquistas com tela própria, um cartão no perfil e um aviso a cada conquista nova.",
+          "Visual novo: uma apresentação em forma de baralho, um cartão de treino com a tonelagem em destaque e a cor do mês brilhando na tela de início.",
+          "Um cartão de perfil vivo com treinos, recordes e semanas seguidas.",
+          "Um ícone novo para o app.",
+          "Salvar um treino ficou cerca de 20 vezes mais rápido.",
+          "Atualizações OTA: correções agora podem chegar sem uma versão nova na App Store."
+        ]
+      }
+    },
+    {
+      "id": "1.0.0",
+      "kind": "store",
+      "date": "2026-09",
+      "shots": [
+        {
+          "src": "shots/v10-journal.jpg",
+          "en": "The year as month cards",
+          "uk": "Рік як картки місяців",
+          "pl": "Rok jako karty miesięcy",
+          "de": "Das Jahr als Monatskarten",
+          "es": "El año en tarjetas de meses",
+          "pt-BR": "O ano em cartões de meses"
+        },
+        {
+          "src": "shots/v10-compose.jpg",
+          "en": "Logging a workout",
+          "uk": "Запис тренування",
+          "pl": "Zapisywanie treningu",
+          "de": "Training erfassen",
+          "es": "Registrar un entrenamiento",
+          "pt-BR": "Registrando um treino"
+        },
+        {
+          "src": "shots/v10-day.jpg",
+          "en": "A day with its workouts",
+          "uk": "День із тренуваннями",
+          "pl": "Dzień z treningami",
+          "de": "Ein Tag mit seinen Trainings",
+          "es": "Un día con sus entrenamientos",
+          "pt-BR": "Um dia com seus treinos"
+        },
+        {
+          "src": "shots/v10-exercise.jpg",
+          "en": "Exercise records and progress",
+          "uk": "Рекорди й прогрес вправи",
+          "pl": "Rekordy i postęp ćwiczenia",
+          "de": "Rekorde und Fortschritt einer Übung",
+          "es": "Récords y progreso del ejercicio",
+          "pt-BR": "Recordes e progresso do exercício"
+        },
+        {
+          "src": "shots/v10-exercises.jpg",
+          "en": "Your exercise library",
+          "uk": "Ваша бібліотека вправ",
+          "pl": "Twoja biblioteka ćwiczeń",
+          "de": "Deine Übungsbibliothek",
+          "es": "Tu biblioteca de ejercicios",
+          "pt-BR": "Sua biblioteca de exercícios"
+        }
+      ],
+      "en": {
+        "title": "The first version",
+        "notes": [
+          "Your year as a shelf of month cards, each with a cover photo or a colour.",
+          "Offline workout logging: exercises, sets, weight, reps and warm-ups. Nothing is lost if the app closes.",
+          "Your last numbers appear as hints, so logging a set takes a few taps.",
+          "Personal records rebuild whenever you edit the past, so there are no ghost records.",
+          "Your own exercise library with search.",
+          "Charts for max weight, estimated max, tonnage and reps, plus streaks and records.",
+          "Body weight, body fat and measurements with period comparison.",
+          "Export to CSV, JSON and a printable month PDF."
+        ]
+      },
+      "uk": {
+        "title": "Перша версія",
+        "notes": [
+          "Ваш рік як полиця карток місяців, кожна з фото-обкладинкою або кольором.",
+          "Запис тренувань без інтернету: вправи, підходи, вага, повторення й розминка. Нічого не губиться, якщо застосунок закриється.",
+          "Ваші останні цифри з'являються як підказки, тож підхід записується кількома дотиками.",
+          "Особисті рекорди перераховуються щоразу, коли ви редагуєте минуле, тож фантомних рекордів немає.",
+          "Власна бібліотека вправ із пошуком.",
+          "Графіки максимальної ваги, розрахункового максимуму, тоннажу й повторень, а також серії й рекорди.",
+          "Вага тіла, відсоток жиру й обхвати з порівнянням періодів.",
+          "Експорт у CSV, JSON і PDF місяця для друку."
+        ]
+      },
+      "pl": {
+        "title": "Pierwsza wersja",
+        "notes": [
+          "Twój rok jako półka kart miesięcy, każda ze zdjęciem na okładce albo kolorem.",
+          "Zapisywanie treningów offline: ćwiczenia, serie, ciężar, powtórzenia i rozgrzewka. Nic nie ginie, gdy aplikacja się zamknie.",
+          "Ostatnie wyniki pojawiają się jako podpowiedzi, więc serię zapisujesz kilkoma dotknięciami.",
+          "Rekordy przeliczają się przy każdej edycji historii, więc nie ma rekordów widm.",
+          "Własna biblioteka ćwiczeń z wyszukiwaniem.",
+          "Wykresy maksymalnego ciężaru, szacowanego maksimum, tonażu i powtórzeń, a do tego serie i rekordy.",
+          "Waga ciała, tkanka tłuszczowa i obwody z porównaniem okresów.",
+          "Eksport do CSV, JSON i PDF miesiąca do druku."
+        ]
+      },
+      "de": {
+        "title": "Die erste Version",
+        "notes": [
+          "Dein Jahr als Regal aus Monatskarten, jede mit Titelfoto oder Farbe.",
+          "Trainings offline erfassen: Übungen, Sätze, Gewicht, Wiederholungen und Aufwärmsätze. Nichts geht verloren, wenn die App geschlossen wird.",
+          "Deine letzten Werte erscheinen als Hinweise, so ist ein Satz mit wenigen Tipps erfasst.",
+          "Rekorde werden bei jeder Änderung der Vergangenheit neu berechnet, es gibt also keine Geisterrekorde.",
+          "Deine eigene Übungsbibliothek mit Suche.",
+          "Diagramme für Maximalgewicht, geschätztes Maximum, Volumen und Wiederholungen, dazu Serien und Rekorde.",
+          "Körpergewicht, Körperfett und Maße mit Zeitraumvergleich.",
+          "Export als CSV, JSON und druckbares Monats-PDF."
+        ]
+      },
+      "es": {
+        "title": "La primera versión",
+        "notes": [
+          "Tu año como una estantería de tarjetas de meses, cada una con foto de portada o un color.",
+          "Registro de entrenamientos sin conexión: ejercicios, series, peso, repeticiones y calentamiento. No se pierde nada si la app se cierra.",
+          "Tus últimas cifras aparecen como sugerencias, así que registrar una serie lleva pocos toques.",
+          "Los récords se recalculan cada vez que editas el pasado, así que no hay récords fantasma.",
+          "Tu propia biblioteca de ejercicios con búsqueda.",
+          "Gráficas de peso máximo, máximo estimado, tonelaje y repeticiones, además de rachas y récords.",
+          "Peso corporal, grasa corporal y medidas con comparación de periodos.",
+          "Exportación a CSV, JSON y un PDF del mes para imprimir."
+        ]
+      },
+      "pt-BR": {
+        "title": "A primeira versão",
+        "notes": [
+          "Seu ano como uma estante de cartões de meses, cada um com foto de capa ou uma cor.",
+          "Registro de treinos offline: exercícios, séries, carga, repetições e aquecimento. Nada se perde se o app fechar.",
+          "Seus últimos números aparecem como dicas, então registrar uma série leva poucos toques.",
+          "Os recordes são recalculados sempre que você edita o passado, então não existem recordes fantasmas.",
+          "Sua própria biblioteca de exercícios com busca.",
+          "Gráficos de carga máxima, máximo estimado, tonelagem e repetições, além de sequências e recordes.",
+          "Peso corporal, gordura corporal e medidas com comparação de períodos.",
+          "Exportação para CSV, JSON e um PDF do mês para imprimir."
+        ]
+      }
+    }
+  ]
+}
+
+</script>
+</body>
+</html>

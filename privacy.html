@@ -4,30 +4,38 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy Policy · Gym Cards</title>
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="stylesheet" href="style.css">
 <script src="site.js"></script>
 </head>
 <body>
-<main>
+<main class="prose">
 
 <div class="topbar">
-  <nav>
-    <a href="index.html">Gym Cards</a>
-    <a href="privacy.html"><span data-lang="en">Privacy</span><span data-lang="uk" lang="uk">Конфіденційність</span><span data-lang="pl" lang="pl">Prywatność</span><span data-lang="de" lang="de">Datenschutz</span><span data-lang="es" lang="es">Privacidad</span><span data-lang="pt-BR" lang="pt-BR">Privacidade</span></a>
-    <a href="support.html"><span data-lang="en">Support</span><span data-lang="uk" lang="uk">Підтримка</span><span data-lang="pl" lang="pl">Pomoc</span><span data-lang="de" lang="de">Hilfe</span><span data-lang="es" lang="es">Ayuda</span><span data-lang="pt-BR" lang="pt-BR">Ajuda</span></a>
-  </nav>
-  <div class="controls">
-    <select class="lang" data-set-lang aria-label="Language">
-      <option value="de" lang="de">Deutsch</option>
-      <option value="en" lang="en">English</option>
-      <option value="es" lang="es">Español</option>
-      <option value="pl" lang="pl">Polski</option>
-      <option value="pt-BR" lang="pt-BR">Português</option>
-      <option value="uk" lang="uk">Українська</option>
-    </select>
-    <button type="button" class="theme-toggle" data-toggle-theme aria-label="Switch theme">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg>
-    </button>
+  <a class="brand" href="index.html"><img src="apple-touch-icon.png" alt="" width="28" height="28">Gym Cards</a>
+  <button type="button" class="menu-toggle" data-menu aria-expanded="false" aria-controls="site-menu" aria-label="Menu"><span></span></button>
+  <div class="menu" id="site-menu">
+    <div class="menu-inner">
+      <nav>
+        <a href="changelog.html"><span data-lang="en">Changelog</span><span data-lang="uk" lang="uk">Що нового</span><span data-lang="pl" lang="pl">Zmiany</span><span data-lang="de" lang="de">Änderungen</span><span data-lang="es" lang="es">Novedades</span><span data-lang="pt-BR" lang="pt-BR">Novidades</span></a>
+        <a href="privacy.html" aria-current="page"><span data-lang="en">Privacy</span><span data-lang="uk" lang="uk">Конфіденційність</span><span data-lang="pl" lang="pl">Prywatność</span><span data-lang="de" lang="de">Datenschutz</span><span data-lang="es" lang="es">Privacidad</span><span data-lang="pt-BR" lang="pt-BR">Privacidade</span></a>
+        <a href="support.html"><span data-lang="en">Support</span><span data-lang="uk" lang="uk">Підтримка</span><span data-lang="pl" lang="pl">Pomoc</span><span data-lang="de" lang="de">Hilfe</span><span data-lang="es" lang="es">Ayuda</span><span data-lang="pt-BR" lang="pt-BR">Ajuda</span></a>
+      </nav>
+      <div class="controls">
+        <select class="lang" data-set-lang aria-label="Language">
+          <option value="de" lang="de">Deutsch</option>
+          <option value="en" lang="en">English</option>
+          <option value="es" lang="es">Español</option>
+          <option value="pl" lang="pl">Polski</option>
+          <option value="pt-BR" lang="pt-BR">Português</option>
+          <option value="uk" lang="uk">Українська</option>
+        </select>
+        <button type="button" class="theme-toggle" data-toggle-theme aria-label="Switch theme">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg>
+        </button>
+      </div>
+    </div>
   </div>
 </div>
 
